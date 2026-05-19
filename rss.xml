@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Simply LED Store — Safety Tips &amp; Stories</title>
+    <link>https://mysimplyledstore.com</link>
+    <description>Real stories. Real safety. LED clip lights for night visibility for joggers, pet owners, cyclists, and more.</description>
+    <language>en-us</language>
+    <atom:link href="https://mysimplyledstore.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The Camp Counselor Said 'Never Again' — Then She Found This Clip</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=camp-counselor-never-again</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=camp-counselor-never-again</guid>
+      <description>A single terrifying moment on an evening hike changed how this camp counselor thinks about child safety forever.</description>
+      <category>Kids &amp; Camp</category>
+      <pubDate>Mon, 14 Apr 2026 03:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>She Almost Lost Her Dog on a Tuesday Night. A Clip Would Have Changed Everything.</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=dog-walker-close-call</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=dog-walker-close-call</guid>
+      <description>It was just a regular evening walk. Until the car came around the bend.</description>
+      <category>Pet Safety</category>
+      <pubDate>Mon, 14 Apr 2026 02:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>The Cyclist Who Was 'Too Experienced' to Need Safety Lights — Until a Truck Nearly Ended His Ride</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=cyclist-invisible-at-night</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=cyclist-invisible-at-night</guid>
+      <description>He'd ridden thousands of miles. Then a truck nearly ended everything.</description>
+      <category>Cyclists</category>
+      <pubDate>Sun, 13 Apr 2026 03:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>5am Runners Are Invisible to Drivers. Here's the Fix That Could Save Your Life.</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=early-morning-runner-safety</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=early-morning-runner-safety</guid>
+      <description>At 5am, you are invisible. Not metaphorically. Literally.</description>
+      <category>Joggers &amp; Walkers</category>
+      <pubDate>Sun, 13 Apr 2026 02:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Traveling This Summer? The One Safety Item Every Tourist Forgets to Pack</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=travel-safety-unfamiliar-roads</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=travel-safety-unfamiliar-roads</guid>
+      <description>You don't know the roads. That's the hidden danger of travel.</description>
+      <category>Travel Safety</category>
+      <pubDate>Sat, 12 Apr 2026 03:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>The Night Walk That Changed Everything: Why Every Jogger Needs a Safety Light</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=night-walk-safety-light</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=night-walk-safety-light</guid>
+      <description>She knew that neighborhood like the back of her hand. Then a car changed everything.</description>
+      <category>Night Safety</category>
+      <pubDate>Sat, 12 Apr 2026 02:00:00 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>Why Walking After Dark Without a Clip Light Is Riskier Than You Think</title>
+      <link>https://mysimplyledstore.com/BlogPost?slug=walking-after-dark-risk</link>
+      <guid>https://mysimplyledstore.com/BlogPost?slug=walking-after-dark-risk</guid>
+      <description>Most people don't think twice about an evening walk. But drivers can't see you.</description>
+      <category>Walk Smarter</category>
+      <pubDate>Fri, 11 Apr 2026 03:00:00 +0000</pubDate>
+    </item>
+
+  </channel>
+</rss>

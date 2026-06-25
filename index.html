@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Simply LED Store - LED Safety Lights for Night Visibility</title>
   <meta name="description" content="BLITZU LED safety clip lights for walkers, runners, cyclists, and pets. Stay visible from 300+ feet at night.">
+  <link rel="canonical" href="https://mysimplyledstore.com/">
+  <meta property="og:title" content="My Simply LED Store - LED Safety Lights for Night Visibility">
+  <meta property="og:description" content="Clip-on LED safety lights for night walking, running, cycling, pets, and travel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mysimplyledstore.com/">
+  <meta property="og:image" content="https://mysimplyledstore.com/logo.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L1SXPXWBP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,6 +21,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mysimplyledstore.com/#organization",
+        "name": "My Simply LED Store",
+        "url": "https://mysimplyledstore.com/",
+        "logo": "https://mysimplyledstore.com/logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mysimplyledstore.com/#website",
+        "name": "My Simply LED Store",
+        "url": "https://mysimplyledstore.com/",
+        "publisher": { "@id": "https://mysimplyledstore.com/#organization" }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://mysimplyledstore.com/#blitzu-led-safety-clip",
+        "name": "BLITZU LED Safety Clip Light",
+        "description": "Clip-on LED safety light for walkers, runners, cyclists, pets, and travel visibility after dark.",
+        "brand": { "@type": "Brand", "name": "BLITZU" },
+        "category": "Safety Light",
+        "url": "https://mysimplyledstore.com/"
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --black:#08080f;
@@ -487,17 +523,17 @@
 <body>
   <nav>
     <div class="nav-inner">
-      <a class="nav-logo" href="#home" data-page-link="home" aria-label="My Simply LED Store home">
+      <a class="nav-logo" href="index.html" aria-label="My Simply LED Store home">
         <img src="logo.png" alt="My Simply LED Store" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
         <span style="display:none;">My Simply LED Store</span>
       </a>
       <div class="nav-links" id="navLinks">
-        <a class="nav-link active" href="#home" data-page-link="home">Home</a>
-        <a class="nav-link" href="#joggers" data-page-link="joggers">Joggers</a>
-        <a class="nav-link" href="#pets" data-page-link="pets">Pets</a>
-        <a class="nav-link" href="#cyclists" data-page-link="cyclists">Cyclists</a>
-        <a class="nav-link" href="#about" data-page-link="about">About Us</a>
-        <a class="nav-link" href="#blog" data-page-link="blog">Blog</a>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="joggers.html">Joggers</a>
+        <a class="nav-link" href="pets.html">Pets</a>
+        <a class="nav-link" href="cyclists.html">Cyclists</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="blog.html">Blog</a>
       </div>
       <button class="hamburger" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
@@ -596,15 +632,15 @@
             <p class="sub">Click any category to learn more.</p>
           </div>
           <div class="cats-grid">
-            <a class="cat-card" href="#joggers" data-page-link="joggers">
+            <a class="cat-card" href="joggers.html">
               <div class="cat-img"><img src="runners2.png" alt="Joggers and walkers" loading="lazy"></div>
               <div class="cat-body"><h3>Joggers & Walkers</h3><p>Clip lights attach to a waistband, jacket, backpack, or shoes in seconds.</p><div class="cat-cta">Learn More</div></div>
             </a>
-            <a class="cat-card" href="#pets" data-page-link="pets">
+            <a class="cat-card" href="pets.html">
               <div class="cat-img"><img src="dog-night.png" alt="Pet safety at night" loading="lazy"></div>
               <div class="cat-body"><h3>Pets</h3><p>Clip one to a collar or harness so your dog is visible from 300+ feet.</p><div class="cat-cta">Learn More</div></div>
             </a>
-            <a class="cat-card" href="#cyclists" data-page-link="cyclists">
+            <a class="cat-card" href="cyclists.html">
               <div class="cat-img"><img src="bike-night.png" alt="Cyclist visibility lights" loading="lazy"></div>
               <div class="cat-body"><h3>Cyclists</h3><p>Add extra visibility to helmets, bags, clothing, or bike frames.</p><div class="cat-cta">Learn More</div></div>
             </a>
@@ -753,11 +789,11 @@
           <div>
             <div class="footer-heading">Quick Links</div>
             <ul class="footer-links">
-              <li><a href="#home" data-page-link="home">Home</a></li>
-              <li><a href="#joggers" data-page-link="joggers">Joggers</a></li>
-              <li><a href="#pets" data-page-link="pets">Pets</a></li>
-              <li><a href="#cyclists" data-page-link="cyclists">Cyclists</a></li>
-              <li><a href="#blog" data-page-link="blog">Blog</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="joggers.html">Joggers</a></li>
+              <li><a href="pets.html">Pets</a></li>
+              <li><a href="cyclists.html">Cyclists</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
           <div>
@@ -909,6 +945,14 @@
       });
 
       document.addEventListener('click', (event) => {
+        const outboundAmazon = event.target.closest('a[href*="amzn.to"], a[href*="amazon.com"]');
+        if (outboundAmazon && typeof gtag === 'function') {
+          gtag('event', 'amazon_click', {
+            event_category: 'affiliate',
+            event_label: outboundAmazon.href
+          });
+        }
+
         const pageLink = event.target.closest('[data-page-link]');
         if (pageLink) {
           event.preventDefault();

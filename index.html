@@ -5,16 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Simply LED Store - LED Safety Lights for Night Visibility</title>
   <meta name="description" content="BLITZU LED safety clip lights for walkers, runners, cyclists, and pets. Stay visible from 300+ feet at night.">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4L1SXPXWBP"></script>
+  <link rel="canonical" href="https://mysimplyledstore.com/">
+  <meta property="og:title" content="My Simply LED Store - LED Safety Lights for Night Visibility">
+  <meta property="og:description" content="Clip-on LED safety lights for night walking, running, cycling, pets, and travel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mysimplyledstore.com/">
+  <meta property="og:image" content="https://mysimplyledstore.com/sls-logo.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEJNBLHZX2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-4L1SXPXWBP');
+    gtag('config', 'G-BEJNBLHZX2');
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mysimplyledstore.com/#organization",
+        "name": "My Simply LED Store",
+        "url": "https://mysimplyledstore.com/",
+        "logo": "https://mysimplyledstore.com/sls-logo.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mysimplyledstore.com/#website",
+        "name": "My Simply LED Store",
+        "url": "https://mysimplyledstore.com/",
+        "publisher": { "@id": "https://mysimplyledstore.com/#organization" }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://mysimplyledstore.com/#blitzu-led-safety-clip",
+        "name": "BLITZU LED Safety Clip Light",
+        "description": "Clip-on LED safety light for walkers, runners, cyclists, pets, and travel visibility after dark.",
+        "brand": { "@type": "Brand", "name": "BLITZU" },
+        "category": "Safety Light",
+        "url": "https://mysimplyledstore.com/"
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --black:#08080f;
@@ -51,6 +87,7 @@
     }
     .nav-inner {
       max-width:1100px;
+      min-height:74px;
       margin:0 auto;
       display:flex;
       align-items:center;
@@ -67,7 +104,7 @@
       font-weight:600;
       color:var(--gold);
     }
-    .nav-logo img { height:46px; width:auto; }
+    .nav-logo img { height:64px; width:auto; object-fit:contain; }
     .nav-links { display:flex; gap:4px; }
     .nav-link {
       color:var(--muted);
@@ -487,17 +524,17 @@
 <body>
   <nav>
     <div class="nav-inner">
-      <a class="nav-logo" href="#home" data-page-link="home" aria-label="My Simply LED Store home">
-        <img src="logo.png" alt="My Simply LED Store" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
-        <span style="display:none;">My Simply LED Store</span>
+      <a class="nav-logo" href="index.html" aria-label="My Simply LED Store home">
+        <img src="sls-logo.png" alt="My Simply LED Store" onerror="this.style.display='none';">
+        <span>My Simply LED Store</span>
       </a>
       <div class="nav-links" id="navLinks">
-        <a class="nav-link active" href="#home" data-page-link="home">Home</a>
-        <a class="nav-link" href="#joggers" data-page-link="joggers">Joggers</a>
-        <a class="nav-link" href="#pets" data-page-link="pets">Pets</a>
-        <a class="nav-link" href="#cyclists" data-page-link="cyclists">Cyclists</a>
-        <a class="nav-link" href="#about" data-page-link="about">About Us</a>
-        <a class="nav-link" href="#blog" data-page-link="blog">Blog</a>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="joggers.html">Joggers</a>
+        <a class="nav-link" href="pets.html">Pets</a>
+        <a class="nav-link" href="cyclists.html">Cyclists</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="blog.html">Blog</a>
       </div>
       <button class="hamburger" type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
@@ -540,7 +577,7 @@
           <div class="products-grid">
             <article class="product-card best">
               <div class="best-badge">Most Popular</div>
-              <div class="product-img"><img src="led-clip-yellow.png" alt="BLITZU LED safety clip in yellow" loading="lazy"></div>
+              <div class="product-img"><img src="led-clip-yellow.png" alt="Yellow clip-on LED safety light" loading="lazy"></div>
               <div class="product-body">
                 <h3>BLITZU LED Safety Clip - Yellow</h3>
                 <p>Bright clip-on visibility for walking, running, cycling, and pet safety.</p>
@@ -555,7 +592,7 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-img"><img src="led-clip-red.png" alt="BLITZU LED safety clip in red" loading="lazy"></div>
+              <div class="product-img"><img src="led-clip-red.png" alt="Red clip-on LED safety light" loading="lazy"></div>
               <div class="product-body">
                 <h3>BLITZU LED Safety Clip - Red</h3>
                 <p>Clip to clothing, backpacks, collars, helmets, or bike frames.</p>
@@ -570,7 +607,7 @@
               </div>
             </article>
             <article class="product-card">
-              <div class="product-img"><img src="led-clip-green.png" alt="BLITZU LED safety clip in green" loading="lazy"></div>
+              <div class="product-img"><img src="led-clip-green.png" alt="Green clip-on LED safety light" loading="lazy"></div>
               <div class="product-body">
                 <h3>BLITZU LED Safety Clip - Green</h3>
                 <p>Compact visibility for dark streets, trails, parking lots, and travel.</p>
@@ -596,15 +633,15 @@
             <p class="sub">Click any category to learn more.</p>
           </div>
           <div class="cats-grid">
-            <a class="cat-card" href="#joggers" data-page-link="joggers">
+            <a class="cat-card" href="joggers.html">
               <div class="cat-img"><img src="runners2.png" alt="Joggers and walkers" loading="lazy"></div>
               <div class="cat-body"><h3>Joggers & Walkers</h3><p>Clip lights attach to a waistband, jacket, backpack, or shoes in seconds.</p><div class="cat-cta">Learn More</div></div>
             </a>
-            <a class="cat-card" href="#pets" data-page-link="pets">
+            <a class="cat-card" href="pets.html">
               <div class="cat-img"><img src="dog-night.png" alt="Pet safety at night" loading="lazy"></div>
               <div class="cat-body"><h3>Pets</h3><p>Clip one to a collar or harness so your dog is visible from 300+ feet.</p><div class="cat-cta">Learn More</div></div>
             </a>
-            <a class="cat-card" href="#cyclists" data-page-link="cyclists">
+            <a class="cat-card" href="cyclists.html">
               <div class="cat-img"><img src="bike-night.png" alt="Cyclist visibility lights" loading="lazy"></div>
               <div class="cat-body"><h3>Cyclists</h3><p>Add extra visibility to helmets, bags, clothing, or bike frames.</p><div class="cat-cta">Learn More</div></div>
             </a>
@@ -753,11 +790,11 @@
           <div>
             <div class="footer-heading">Quick Links</div>
             <ul class="footer-links">
-              <li><a href="#home" data-page-link="home">Home</a></li>
-              <li><a href="#joggers" data-page-link="joggers">Joggers</a></li>
-              <li><a href="#pets" data-page-link="pets">Pets</a></li>
-              <li><a href="#cyclists" data-page-link="cyclists">Cyclists</a></li>
-              <li><a href="#blog" data-page-link="blog">Blog</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="joggers.html">Joggers</a></li>
+              <li><a href="pets.html">Pets</a></li>
+              <li><a href="cyclists.html">Cyclists</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
           <div>
@@ -778,7 +815,7 @@
         slug:'camp-counselor-never-again',
         title:"The Camp Counselor Said 'Never Again' - Then She Found This Clip",
         category:'Kids & Camp',
-        image:'https://i.ibb.co/6R8YB3F4/KIDS-CAMP.png',
+        image:'night-walkers-diverse.png',
         excerpt:'A single terrifying moment on an evening hike changed how this camp counselor thinks about child safety forever.',
         content:`<p>The flashlight died at 8:47pm. Thirty-two kids. A wooded trail. No moon. Complete darkness.</p><p>Camp counselor Maya Rivera counted heads in the dark for six of the longest minutes of her life. Everyone was safe. But she never forgot those six minutes. The following year she ordered LED clip-on lights for every camper. Every child visible from 300 feet. Every activity safe.</p><h2>The Danger Nobody Talks About</h2><p>Children in low-light conditions become nearly invisible. Most parents don't think about visibility until something goes wrong.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Visible from over 300 feet</li><li>Clips on in 3 seconds - no setup needed</li><li>100+ hour battery life</li><li>Clips to backpacks, jackets, belt loops</li></ul><p>Don't wait for a close call.</p>`
       },
@@ -786,7 +823,7 @@
         slug:'dog-walker-close-call',
         title:'She Almost Lost Her Dog on a Tuesday Night. A Clip Would Have Changed Everything.',
         category:'Pet Safety',
-        image:'https://i.ibb.co/hxvmzM28/PET-SAFETY-1.png',
+        image:'dog-night.png',
         excerpt:'It was just a regular evening walk. Until the car came around the bend.',
         content:`<p>The car didn't slow down until it was almost too late. Lisa walked that same street every evening for three years. That Tuesday a driver came around a dark bend at 35mph and saw nothing. He swerved at the last second.</p><p>The next morning she ordered LED clip-on lights. One for the collar. One for her jacket. She's never walked without them since.</p><h2>The Real Risk</h2><p>The average driver can't see a pedestrian until they are 50-75 feet away. At 30mph that's less than two seconds to react.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Seen from over 300 feet</li><li>3 modes: steady, fast strobe, slow flash</li><li>100+ hour battery life</li><li>Weather-resistant</li></ul>`
       },
@@ -794,7 +831,7 @@
         slug:'cyclist-invisible-at-night',
         title:"The Cyclist Who Was 'Too Experienced' to Need Safety Lights - Until a Truck Nearly Ended His Ride",
         category:'Cyclists',
-        image:'https://i.ibb.co/vx6wPmzK/CYCLING.png',
+        image:'bike-night.png',
         excerpt:"He'd ridden thousands of miles. Then a truck nearly ended everything.",
         content:`<p>"I never saw you. I swear to God, I never saw you." Marcus had cycled for twelve years. He wore a helmet. He followed traffic laws. But a delivery truck came within inches of ending his ride. That night he added LED clips to every ride.</p><h2>Why Experienced Cyclists Are Most at Risk</h2><p>Comfortable cyclists stop thinking about visibility. Many cycling accidents happen in low-light conditions.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Visible from 300+ feet in any direction</li><li>Clips to helmet, clothing, or bike frame</li><li>3 modes: steady, fast strobe, slow flash</li><li>100+ hour battery life</li></ul>`
       },
@@ -802,7 +839,7 @@
         slug:'early-morning-runner-safety',
         title:"5am Runners Are Invisible to Drivers. Here's the Fix That Could Save Your Life.",
         category:'Joggers & Walkers',
-        image:'https://i.ibb.co/Xk5Zcjp7/JOGGERS-AND-RUNNERS-WITH-SAFETY-CLIP-LIGHTS.png',
+        image:'runners2.png',
         excerpt:'At 5am, you are invisible. Not metaphorically. Literally.',
         content:`<p>At 5am, you are invisible. Dark clothes on a dark road means drivers don't see you until less than 60 feet away. At 40mph that is about one second to react.</p><h2>The Math That Should Scare Every Runner</h2><ul><li>Driver reaction time: about 1.5 seconds</li><li>Distance to stop at 40mph: 120+ feet</li><li>Distance driver sees dark clothing: 50-75 feet</li></ul><p>That gap is where runners get hurt.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Visible from 300+ feet</li><li>Clips to waistband or jacket in seconds</li><li>Lightweight and easy to carry</li><li>100+ hour battery life</li></ul>`
       },
@@ -810,7 +847,7 @@
         slug:'travel-safety-unfamiliar-roads',
         title:'Traveling This Summer? The One Safety Item Every Tourist Forgets to Pack',
         category:'Travel Safety',
-        image:'https://i.ibb.co/4gRjRkm4/TRAVEL-SAFETY.png',
+        image:'night-walkers-diverse.png',
         excerpt:"You don't know the roads. That's the hidden danger of travel.",
         content:`<p>You don't know the roads. Unfamiliar streets. No sidewalks. Different traffic patterns. Evening walks back from dinner in a town you've never visited. Every year tourists are struck by vehicles in low-light conditions on roads they don't know.</p><h2>Why Tourists Are at Higher Risk</h2><p>At home you know which streets have poor lighting. Traveling, you know none of that.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Pocket-sized - fits any travel bag</li><li>No charging - batteries last 100+ hours</li><li>Clips to any clothing or bag instantly</li><li>Works anywhere in the world</li></ul>`
       },
@@ -818,7 +855,7 @@
         slug:'night-walk-safety-light',
         title:'The Night Walk That Changed Everything: Why Every Jogger Needs a Safety Light',
         category:'Night Safety',
-        image:'https://i.ibb.co/Xx7sWMfq/JOGGERS.png',
+        image:'runners2.png',
         excerpt:'She knew that neighborhood like the back of her hand. Then a car changed everything.',
         content:`<p>It was the same route she'd walked a hundred times. But the evening a car rolled through a stop sign and nearly clipped her, she realized: the driver never saw her. Dark jacket. Dark pants. No lights. Completely invisible.</p><h2>Familiar Routes Are the Most Dangerous</h2><p>Familiarity breeds complacency. You stop noticing the broken streetlight. Drivers don't share your familiarity.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Visible from 300+ feet</li><li>Clips on in seconds</li><li>100+ hour battery life</li><li>Weather-resistant</li></ul>`
       },
@@ -826,7 +863,7 @@
         slug:'walking-after-dark-risk',
         title:'Why Walking After Dark Without a Clip Light Is Riskier Than You Think',
         category:'Walk Smarter',
-        image:'https://i.ibb.co/rRF35bhF/SAFETY-LIGHT-WALKING.png',
+        image:'night-walkers-diverse.png',
         excerpt:"Most people don't think twice about an evening walk. But drivers can't see you.",
         content:`<p>Most people don't think twice about an evening walk. But from inside a moving car, you are nearly invisible.</p><h2>The Visibility Gap</h2><p>Without lighting, the average pedestrian becomes visible at just <strong>50-75 feet</strong>, less than two car lengths. Add a BLITZU LED clip: visible from 300+ feet. Instantly.</p><h2>The Solution: BLITZU LED Safety Clip</h2><ul><li>Visible from 300+ feet</li><li>3 light modes</li><li>Small enough to live in your jacket pocket</li><li>100+ hour battery life</li></ul>`
       }
@@ -909,6 +946,14 @@
       });
 
       document.addEventListener('click', (event) => {
+        const outboundAmazon = event.target.closest('a[href*="amzn.to"], a[href*="amazon.com"]');
+        if (outboundAmazon && typeof gtag === 'function') {
+          gtag('event', 'amazon_click', {
+            event_category: 'affiliate',
+            event_label: outboundAmazon.href
+          });
+        }
+
         const pageLink = event.target.closest('[data-page-link]');
         if (pageLink) {
           event.preventDefault();

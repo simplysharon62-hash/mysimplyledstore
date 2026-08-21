@@ -25,25 +25,31 @@
 @media(max-width:768px){.trending-grid{grid-template-columns:1fr}}
 </style>
 <style>
-.category-showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.category-photo-card{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:transform .2s,border-color .2s}
-.category-photo-card:hover{transform:translateY(-2px);border-color:rgba(245,197,24,.25)}
-.category-photo-card img{width:100%;height:190px;object-fit:cover}
-.category-photo-card .card-body{padding:18px}
-.category-photo-card .card-body p{color:var(--muted);font-size:14px;line-height:1.55;margin:6px 0 0}
-.more-comparisons{margin-top:28px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:0}
-.more-comparisons summary{cursor:pointer;padding:18px 20px;font-family:'Oswald',sans-serif;font-weight:600;color:#fff}
-.more-comparisons-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 20px 20px}
-.more-comparisons-list a{padding:10px 12px;border-radius:8px;background:rgba(255,255,255,.03);color:var(--muted);font-size:13px}
-.more-comparisons-list a:hover{color:#fff;background:rgba(245,197,24,.08)}
+.research-section{scroll-margin-top:88px}
+.comparison-grid,.category-showcase{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.comparison-card,.category-photo-card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.comparison-card:hover,.category-photo-card:hover{transform:translateY(-4px);border-color:rgba(245,197,24,.42);box-shadow:0 18px 42px rgba(0,0,0,.22)}
+.comparison-card img,.category-photo-card img{display:block;width:100%;height:210px;object-fit:cover}
+.comparison-body,.category-photo-card .card-body{padding:22px}
+.comparison-body h3,.category-photo-card h3{margin:5px 0 6px;color:#fff;font-size:22px}
+.comparison-matchup{color:#f5c518;font-weight:600;line-height:1.35;margin:0 0 17px}
+.compare-label{display:block;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.compare-points{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:0 0 19px}
+.compare-points li{padding:6px 9px;border:1px solid rgba(255,255,255,.09);border-radius:999px;background:rgba(255,255,255,.035);color:#d6d6df;font-size:12px}
+.card-cta{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:9px;background:#f5c518;color:#111!important;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.01em}
+.card-cta:hover{background:#ffe05b}
+.category-photo-card{display:flex;flex-direction:column;color:inherit;text-decoration:none}
+.category-photo-card .card-body{display:flex;flex:1;flex-direction:column}
+.category-photo-card .card-body p{color:var(--muted);font-size:14px;line-height:1.6;margin:6px 0 18px}
+.category-photo-card .card-cta{margin-top:auto;align-self:flex-start}
 .trending-clean{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .trending-clean article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px}
 .trending-clean h3{font-size:17px;color:#fff;margin-bottom:6px}
 .trending-clean p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px}
 .trending-clean .text-link{font-size:13px}
-.section-spacer{scroll-margin-top:90px}
-@media(max-width:900px){.category-showcase{grid-template-columns:repeat(2,1fr)}.more-comparisons-list{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.category-showcase,.trending-clean,.more-comparisons-list{grid-template-columns:1fr}}
+.section-heading>p{max-width:520px}
+@media(max-width:980px){.comparison-grid,.category-showcase{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.comparison-grid,.category-showcase,.trending-clean{grid-template-columns:1fr}.comparison-card img,.category-photo-card img{height:225px}}
 </style>
 
 </head>
@@ -52,65 +58,24 @@
   <header class="comparison-hero"><div class="hero-copy"><div class="hero-badge"><div class="badge-dot"></div><span>Lifestyle. Essentials. Deals.</span></div><h1>Compare smarter.<br><span class="accent">Shop better.</span></h1><p>Simply LED Store is a practical product-comparison resource for everyday essentials, useful upgrades, and the decisions behind a better buy.</p><div class="button-row"><a class="btn" href="#comparisons">Explore comparisons</a><a class="btn btn-secondary" href="#guides">Read buying guides</a></div><p class="hero-note"><strong>LED</strong> now means Lifestyle. Essentials. Deals. LED safety remains one of our categories, alongside home, kitchen, outdoor, pet, and everyday products.</p></div><div class="hero-panel"><img src="produce-washer-hero.png" alt="Fresh produce beside a rechargeable kitchen gadget"><div class="hero-panel-caption"><span>Featured category</span><strong>Practical kitchen essentials</strong><a href="produce-washer.html">View the guide</a></div></div></header>
   <section class="section intro-band"><div class="section-inner intro-grid"><div><div class="section-label"><span>How we help</span></div><h2>Useful information before you click buy</h2></div><p>We organize product research into clear comparisons, practical guides, and current shopping links. Product details, prices, availability, and reviews can change, so confirm the live listing before ordering.</p></div></section>
   
-<section class="section" id="comparisons">
+<section class="section research-section" id="comparisons">
   <div class="section-inner">
     <div class="section-heading">
       <div>
         <div class="section-label"><span>Featured comparisons</span></div>
-        <h2>Start with what you're shopping for</h2>
+        <h2>Featured Product Comparisons</h2>
       </div>
-      <p>Browse a category first, then narrow down the products and features that matter most.</p>
+      <p>See popular products side by side before you buy.</p>
     </div>
 
-    <div class="category-showcase">
-      <a class="category-photo-card section-spacer" id="home-kitchen" href="produce-washer.html">
-        <img src="produce-washer-hero.png" alt="Kitchen products and practical home essentials">
-        <div class="card-body"><span class="card-kicker">Home &amp; Kitchen</span><h3>Kitchen essentials</h3><p>Produce washers, air fryers, coffee makers, multi-cookers, and useful everyday upgrades.</p></div>
-      </a>
-
-      <a class="category-photo-card section-spacer" id="electronics" href="#electronics-more">
-        <img src="https://images.unsplash.com/photo-1754142654807-1dfcdc3f7f22?auto=format&fit=crop&w=1200&q=80" alt="Wireless earbuds representing electronics comparisons">
-        <div class="card-body"><span class="card-kicker">Electronics</span><h3>Everyday tech</h3><p>Earbuds, streaming devices, portable chargers, screen protectors, and other practical tech.</p></div>
-      </a>
-
-      <a class="category-photo-card section-spacer" id="smart-home" href="#smart-home-more">
-        <img src="https://images.unsplash.com/photo-1773132500025-4465e723a1ab?auto=format&fit=crop&w=1200&q=80" alt="Home security camera representing smart home comparisons">
-        <div class="card-body"><span class="card-kicker">Smart Home</span><h3>Home technology</h3><p>Security cameras, smart doorbells, robot vacuums, and connected-home products.</p></div>
-      </a>
-
-      <a class="category-photo-card section-spacer" id="cleaning" href="#cleaning-more">
-        <img src="https://images.unsplash.com/photo-1762500825366-ba34b0c5352e?auto=format&fit=crop&w=1200&q=80" alt="Robot vacuum in a modern home">
-        <div class="card-body"><span class="card-kicker">Cleaning</span><h3>Vacuums &amp; cleaning tools</h3><p>Robot vacuums, cordless vacuums, car vacuums, and other time-saving cleaning products.</p></div>
-      </a>
-
-      <a class="category-photo-card section-spacer" id="coffee" href="#kitchen-more">
-        <img src="https://images.unsplash.com/photo-1722824742919-73a0405c4abe?auto=format&fit=crop&w=1200&q=80" alt="Coffee maker on a kitchen counter">
-        <div class="card-body"><span class="card-kicker">Kitchen</span><h3>Coffee &amp; countertop appliances</h3><p>Compare features, size, cleanup, convenience, and recurring costs before buying.</p></div>
-      </a>
-
-      <a class="category-photo-card section-spacer" id="outdoor" href="joggers.html">
-        <img src="runners2.png" alt="Outdoor safety products for walkers and runners">
-        <div class="card-body"><span class="card-kicker">Outdoor &amp; Safety</span><h3>Outdoor essentials</h3><p>Visibility gear, walking and running products, travel items, and practical safety picks.</p></div>
-      </a>
+    <div class="comparison-grid">
+      <article class="comparison-card" id="air-fryers-comparison"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Modern countertop appliances in a bright kitchen" loading="lazy"><div class="comparison-body"><span class="card-kicker">Air Fryers</span><h3>Ninja vs Instant vs Gourmia</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Capacity</li><li>Cooking functions</li><li>Cleanup</li><li>Counter space</li><li>Best for</li></ul><a class="card-cta" href="#air-fryers-comparison">Compare Air Fryers</a></div></article>
+      <article class="comparison-card" id="robot-vacuums-comparison"><img src="https://images.unsplash.com/photo-1762500825301-569628303acb?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Robot vacuum cleaning a modern living room" loading="lazy"><div class="comparison-body"><span class="card-kicker">Robot Vacuums</span><h3>Roomba vs Shark vs Eufy</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Navigation</li><li>Pet hair</li><li>Self-emptying</li><li>Maintenance</li><li>Best for</li></ul><a class="card-cta" href="#robot-vacuums-comparison">Compare Robot Vacuums</a></div></article>
+      <article class="comparison-card" id="earbuds-comparison"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Wireless earbuds and charging case" loading="lazy"><div class="comparison-body"><span class="card-kicker">Wireless Earbuds</span><h3>Apple vs Samsung vs Popular Alternatives</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Battery life</li><li>Noise cancellation</li><li>Fit</li><li>Compatibility</li><li>Best for</li></ul><a class="card-cta" href="#earbuds-comparison">Compare Earbuds</a></div></article>
+      <article class="comparison-card" id="coffee-makers-comparison"><img src="https://images.unsplash.com/photo-1674504866626-fe4f19f68564?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Coffee maker on a clean kitchen counter" loading="lazy"><div class="comparison-body"><span class="card-kicker">Coffee Makers</span><h3>Keurig vs Ninja vs Nespresso</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Brew types</li><li>Serving sizes</li><li>Cleanup</li><li>Pod cost</li><li>Best for</li></ul><a class="card-cta" href="#coffee-makers-comparison">Compare Coffee Makers</a></div></article>
+      <article class="comparison-card" id="cordless-vacuums-comparison"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Bright, freshly cleaned home interior" loading="lazy"><div class="comparison-body"><span class="card-kicker">Cordless Vacuums</span><h3>Shark vs Dyson vs Tineco</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Suction</li><li>Runtime</li><li>Weight</li><li>Attachments</li><li>Best for</li></ul><a class="card-cta" href="#cordless-vacuums-comparison">Compare Cordless Vacuums</a></div></article>
+      <article class="comparison-card" id="security-cameras-comparison"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Smart home controls representing connected security cameras" loading="lazy"><div class="comparison-body"><span class="card-kicker">Security Cameras</span><h3>Ring vs Blink vs Arlo</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Video quality</li><li>Storage</li><li>Subscription cost</li><li>Alerts</li><li>Installation</li></ul><a class="card-cta" href="#security-cameras-comparison">Compare Security Cameras</a></div></article>
     </div>
-
-    <details class="more-comparisons">
-      <summary>See more comparison categories</summary>
-      <div class="more-comparisons-list">
-        <a id="kitchen-more" href="https://www.amazon.com/s?k=air+fryers" target="_blank" rel="noopener noreferrer nofollow">Air fryers</a>
-        <a href="https://www.amazon.com/s?k=coffee+makers" target="_blank" rel="noopener noreferrer nofollow">Coffee makers</a>
-        <a href="https://www.amazon.com/s?k=multi+cookers" target="_blank" rel="noopener noreferrer nofollow">Multi-cookers</a>
-        <a id="electronics-more" href="https://www.amazon.com/s?k=wireless+earbuds" target="_blank" rel="noopener noreferrer nofollow">Wireless earbuds</a>
-        <a href="https://www.amazon.com/s?k=streaming+devices" target="_blank" rel="noopener noreferrer nofollow">Streaming devices</a>
-        <a href="https://www.amazon.com/s?k=portable+chargers" target="_blank" rel="noopener noreferrer nofollow">Portable chargers</a>
-        <a id="smart-home-more" href="https://www.amazon.com/s?k=security+cameras" target="_blank" rel="noopener noreferrer nofollow">Security cameras</a>
-        <a href="https://www.amazon.com/s?k=smart+doorbells" target="_blank" rel="noopener noreferrer nofollow">Smart doorbells</a>
-        <a id="cleaning-more" href="https://www.amazon.com/s?k=robot+vacuums" target="_blank" rel="noopener noreferrer nofollow">Robot vacuums</a>
-        <a href="https://www.amazon.com/s?k=cordless+vacuums" target="_blank" rel="noopener noreferrer nofollow">Cordless vacuums</a>
-        <a href="https://www.amazon.com/s?k=air+purifiers" target="_blank" rel="noopener noreferrer nofollow">Air purifiers</a>
-        <a href="https://www.amazon.com/s?k=portable+power+stations" target="_blank" rel="noopener noreferrer nofollow">Portable power stations</a>
-      </div>
-    </details>
   </div>
 </section>
 
@@ -118,7 +83,7 @@
 <section class="section dark" id="trending-amazon">
   <div class="section-inner">
     <div class="section-heading">
-      <div><div class="section-label"><span>Trending finds</span></div><h2>Products we're currently watching</h2></div>
+      <div><div class="section-label"><span>Trending finds</span></div><h2>Trending Amazon Finds</h2></div>
       <p>A short list of interesting products to research further — not a wall of ads.</p>
     </div>
     <div class="trending-clean"><article><span class="card-kicker">Beauty</span><h3>Sacheu Lip Liner STAY-N Peel Off Lip Stain</h3><p>Peel-off lip stain available in multiple shades.</p><a class="text-link" href="https://www.amazon.com/Sacheu-Lip-Liner-Stay-N-Hyaluronic/dp/B0BVPNQW1C" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Kitchen</span><h3>Tovolo Mini Ice Squeeze & Release Cylinder</h3><p>Compact squeeze-and-release ice mold designed for small-format ice.</p><a class="text-link" href="https://www.amazon.com/Tovolo-Mini-Cylinder-Squeeze-Release/dp/B0CRT9VTGM" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Home</span><h3>Homeika Cordless Stick Vacuum</h3><p>Cordless stick-vacuum options for everyday floor cleaning.</p><a class="text-link" href="https://www.amazon.com/homeika-cordless-stick-vacuum/s?k=homeika+cordless+stick+vacuum" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Beauty</span><h3>Medicube Glass Glow Skincare Set</h3><p>A skincare set to compare by included products, routine, and current availability.</p><a class="text-link" href="https://www.amazon.com/s?k=Medicube+Glass+Glow+Skincare+Set" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Lifestyle</span><h3>BrüMate Resa Flip 35-Ounce Tumbler</h3><p>Large flip-top tumbler for hydration at home, work, or on the go.</p><a class="text-link" href="https://www.amazon.com/s?k=Brumate+Resa+Flip+35+oz" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Electronics</span><h3>Magic John Screen Protectors</h3><p>Multi-pack screen protectors with an alignment-style installation system.</p><a class="text-link" href="https://www.amazon.com/s?k=Magic+John+Screen+Protector" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article></div>
@@ -126,23 +91,28 @@
   </div>
 </section>
 
-<section class="section dark" id="categories">
+<section class="section research-section" id="categories">
   <div class="section-inner">
-    <div class="section-label"><span>Browse categories</span></div>
-    <h2>Find your next everyday upgrade</h2>
-    <div class="category-grid">
-      <a href="#home-kitchen" class="category-item"><span>Home &amp; Kitchen</span><small>Appliances, kitchen tools, and practical home products</small></a>
-      <a href="#electronics" class="category-item"><span>Electronics</span><small>Everyday tech, audio, charging, and accessories</small></a>
-      <a href="#smart-home" class="category-item"><span>Smart Home</span><small>Cameras, doorbells, automation, and connected products</small></a>
-      <a href="#cleaning" class="category-item"><span>Cleaning</span><small>Vacuums and products that make routine cleaning easier</small></a>
-      <a href="#outdoor" class="category-item"><span>Outdoor &amp; Safety</span><small>Visibility, walking, running, and travel essentials</small></a>
-      <a href="#trending-amazon" class="category-item"><span>Trending Finds</span><small>Popular products we're currently watching</small></a>
+    <div class="section-heading">
+      <div><div class="section-label"><span>Browse categories</span></div><h2>Shop by Category</h2></div>
+      <p>Start with the type of product you're looking for.</p>
+    </div>
+    <div class="category-showcase">
+      <a class="category-photo-card" id="category-home-kitchen" href="produce-washer.html"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Bright modern kitchen" loading="lazy"><div class="card-body"><span class="card-kicker">Home &amp; Kitchen</span><h3>Home &amp; Kitchen</h3><p>Appliances, cookware, organizers, and practical upgrades for everyday routines.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-electronics" href="#category-electronics"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Everyday consumer electronics on display" loading="lazy"><div class="card-body"><span class="card-kicker">Electronics</span><h3>Electronics</h3><p>Audio, charging, mobile accessories, and useful technology for daily life.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-smart-home" href="#category-smart-home"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Smart home controls in a modern interior" loading="lazy"><div class="card-body"><span class="card-kicker">Smart Home</span><h3>Smart Home</h3><p>Cameras, doorbells, automation, and connected products for a more responsive home.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-cleaning" href="#category-cleaning"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Professional cleaning in a bright home" loading="lazy"><div class="card-body"><span class="card-kicker">Cleaning</span><h3>Cleaning</h3><p>Vacuums, floor care, and tools that make regular cleaning easier to manage.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-beauty" href="#category-beauty"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Beauty and skincare products arranged on a table" loading="lazy"><div class="card-body"><span class="card-kicker">Beauty &amp; Personal Care</span><h3>Beauty &amp; Personal Care</h3><p>Skincare, grooming, and self-care products considered by routine and value.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-outdoor-safety" href="joggers.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Outdoor landscape for active and safety gear" loading="lazy"><div class="card-body"><span class="card-kicker">Outdoor &amp; Safety</span><h3>Outdoor &amp; Safety</h3><p>Visibility, walking, running, preparedness, and practical outdoor essentials.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-pets" href="#category-pets"><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Dog relaxing at home with its owner" loading="lazy"><div class="card-body"><span class="card-kicker">Pet Products</span><h3>Pet Products</h3><p>Everyday gear for feeding, grooming, walking, play, comfort, and cleanup.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-travel-lifestyle" href="#category-travel-lifestyle"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Traveler looking out over a scenic destination" loading="lazy"><div class="card-body"><span class="card-kicker">Travel &amp; Lifestyle</span><h3>Travel &amp; Lifestyle</h3><p>Useful products for commutes, trips, workdays, hydration, and life on the go.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-deals-trending" href="#trending-amazon"><img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Shopping bags representing deals and trending finds" loading="lazy"><div class="card-body"><span class="card-kicker">Deals &amp; Trending Finds</span><h3>Deals &amp; Trending Finds</h3><p>A focused watchlist of popular products and timely finds worth researching.</p><span class="card-cta">Explore Category</span></div></a>
     </div>
   </div>
 </section>
 
   <section class="section" id="guides"><div class="section-inner"><div class="section-heading"><div><div class="section-label"><span>Buying guides</span></div><h2>Helpful reads for real routines</h2></div><a class="text-link" href="blog.html">View all articles &rarr;</a></div><div class="grid-3 guide-grid"><a class="card card-link" href="night-walking-safety.html"><div class="card-body"><span class="card-kicker">Outdoor safety</span><h3>Night walking safety</h3><p>Practical visibility and route-planning ideas for evening walkers.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="runner-safety-gear.html"><div class="card-body"><span class="card-kicker">Running</span><h3>Safety gear for early runs</h3><p>A simple checklist for runners heading out before sunrise.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="dog-walking-safety.html"><div class="card-body"><span class="card-kicker">Pets</span><h3>Dog walking after dark</h3><p>Ways to make people, pets, leashes, and paths easier to see.</p><span class="text-link">Read article &rarr;</span></div></a></div></div></section>
-  <section class="section dark" id="deals"><div class="section-inner deal-band"><div><div class="section-label"><span>Deals &amp; live offers</span></div><h2>Check the current details at the source</h2><p>Prices, coupons, ratings, shipping, and availability change. Our shopping links take you to the live retailer page so you can review the current information before buying.</p></div><a class="btn" href="https://amzn.to/499lx2I" target="_blank" rel="noopener noreferrer nofollow">Check featured safety light</a></div></section>
+  <section class="section dark" id="deals"><div class="section-inner deal-band"><div><div class="section-label"><span>Deals &amp; live offers</span></div><h2>Check the current details at the source</h2><p>Prices, coupons, ratings, shipping, and availability change. Our shopping links take you to the live retailer page so you can review the current information before buying.</p></div><div><a class="btn" href="https://amzn.to/499lx2I" target="_blank" rel="noopener noreferrer nofollow sponsored">Check featured safety light</a><span class="paid-link">(paid link)</span></div></div></section>
   <section class="section disclosure"><div class="content-inner"><h2>Our editorial approach</h2><p><strong>Affiliate note:</strong> Product-specific affiliate links are added only after the destination is verified. General comparison links may lead to Amazon search results and are not represented as product-specific recommendations.</p><p>We aim to make shopping research easier by explaining what to compare and linking to live product pages. We do not publish invented prices, ratings, discounts, or reviews. As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p></div></section>
   <footer><div class="footer-inner"><div class="footer-grid"><div><div class="footer-logo">Simply LED Store</div><p class="footer-desc">Lifestyle. Essentials. Deals.<br>Practical product comparisons and buying guides.</p></div><div><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="#comparisons">Comparisons</a></li><li><a href="#categories">Categories</a></li><li><a href="#guides">Buying Guides</a></li><li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li></ul></div><div><div class="footer-heading">Disclosure</div><p class="footer-desc">As an Amazon Associate I earn from qualifying purchases. Prices and availability may change at any time.</p></div></div><div class="footer-bottom">&copy; 2026 Simply LED Store &middot; Lifestyle. Essentials. Deals.</div></div></footer>
   <script src="site.js"></script>
@@ -164,4 +134,3 @@ document.addEventListener('click', function(e){
 
 </body>
 </html>
-

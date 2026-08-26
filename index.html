@@ -50,6 +50,68 @@
 .section-heading>p{max-width:520px}
 @media(max-width:980px){.comparison-grid,.category-showcase{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.comparison-grid,.category-showcase,.trending-clean{grid-template-columns:1fr}.comparison-card img,.category-photo-card img{height:225px}}
+
+.sale-card-visual{
+  width:100%;
+  height:210px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  background:linear-gradient(145deg,#15151f,#232331);
+  overflow:hidden;
+}
+.sale-tag-row{
+  display:flex;
+  gap:8px;
+  align-items:flex-start;
+}
+.sale-tag{
+  position:relative;
+  width:58px;
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#ff4b4b;
+  color:#30303a;
+  font-family:'Oswald',sans-serif;
+  font-size:46px;
+  font-weight:700;
+  line-height:1;
+  box-shadow:0 8px 16px rgba(0,0,0,.18);
+}
+.sale-tag::before{
+  content:"";
+  position:absolute;
+  top:-12px;
+  left:50%;
+  width:2px;
+  height:18px;
+  background:#e9e9ef;
+  transform:translateX(-50%);
+}
+.sale-tag::after{
+  content:"";
+  position:absolute;
+  top:7px;
+  left:50%;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:#24242d;
+  transform:translateX(-50%);
+}
+.sale-gift{
+  font-size:58px;
+  line-height:1;
+  filter:drop-shadow(0 8px 10px rgba(0,0,0,.22));
+}
+@media(max-width:640px){
+  .sale-card-visual{height:225px}
+  .sale-tag{width:54px;height:72px;font-size:42px}
+}
 </style>
 
 </head>
@@ -106,7 +168,7 @@
       <a class="category-photo-card" id="category-outdoor-safety" href="joggers.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Outdoor landscape for active and safety gear" loading="lazy"><div class="card-body"><span class="card-kicker">Outdoor &amp; Safety</span><h3>Outdoor &amp; Safety</h3><p>Visibility, walking, running, preparedness, and practical outdoor essentials.</p><span class="card-cta">Explore Category</span></div></a>
       <a class="category-photo-card" id="category-pets" href="#category-pets"><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Dog relaxing at home with its owner" loading="lazy"><div class="card-body"><span class="card-kicker">Pet Products</span><h3>Pet Products</h3><p>Everyday gear for feeding, grooming, walking, play, comfort, and cleanup.</p><span class="card-cta">Explore Category</span></div></a>
       <a class="category-photo-card" id="category-travel-lifestyle" href="#category-travel-lifestyle"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Traveler looking out over a scenic destination" loading="lazy"><div class="card-body"><span class="card-kicker">Travel &amp; Lifestyle</span><h3>Travel &amp; Lifestyle</h3><p>Useful products for commutes, trips, workdays, hydration, and life on the go.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-deals-trending" href="#trending-amazon"><img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Shopping bags representing deals and trending finds" loading="lazy"><div class="card-body"><span class="card-kicker">Deals &amp; Trending Finds</span><h3>Deals &amp; Trending Finds</h3><p>A focused watchlist of popular products and timely finds worth researching.</p><span class="card-cta">Explore Category</span></div></a>
+      <a class="category-photo-card" id="category-deals-trending" href="#trending-amazon"><div class="sale-card-visual" role="img" aria-label="Sale graphic"><div class="sale-tag-row"><span class="sale-tag">S</span><span class="sale-tag">A</span><span class="sale-tag">L</span><span class="sale-tag">E</span></div><div class="sale-gift" aria-hidden="true">🎁</div></div><div class="card-body"><span class="card-kicker">Deals &amp; Trending Finds</span><h3>Deals &amp; Trending Finds</h3><p>A focused watchlist of popular products and timely finds worth researching.</p><span class="card-cta">Explore Category</span></div></a>
     </div>
   </div>
 </section>

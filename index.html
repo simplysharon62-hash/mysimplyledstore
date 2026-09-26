@@ -1,198 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simply LED Store | Product Comparisons, Reviews &amp; Deals</title>
-  <meta name="description" content="Simply LED Store helps you compare everyday essentials, read practical product reviews, follow buying guides, and find current deals. Lifestyle. Essentials. Deals.">
-  <link rel="canonical" href="https://mysimplyledstore.com/">
-  <meta property="og:title" content="Simply LED Store | Product Comparisons, Reviews &amp; Deals">
-  <meta property="og:description" content="Compare practical products, read useful reviews, and shop smarter with Simply LED Store.">
-  <meta property="og:type" content="website"><meta property="og:url" content="https://mysimplyledstore.com/"><meta property="og:image" content="https://mysimplyledstore.com/produce-washer-hero.png">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEJNBLHZX2"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BEJNBLHZX2');</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="seo.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Simply LED Store","alternateName":"Lifestyle. Essentials. Deals.","url":"https://mysimplyledstore.com/","description":"Product comparisons, reviews, buying guides and deals for everyday essentials.","publisher":{"@type":"Organization","name":"Simply LED Store","logo":{"@type":"ImageObject","url":"https://mysimplyledstore.com/sls-logo.png"}}}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>501c3 Made Simple | Free Nonprofit Resources & News</title>
+<meta name="description" content="Free and discounted resources, tools, and news for 501(c)(3) nonprofits.">
 <style>
-.trending-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.trending-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
-.trending-visual{height:190px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;background:linear-gradient(145deg,#10101b,#1a1a28)}
-.trending-visual span{font-size:46px}
-.trending-body{padding:20px}.trending-body h3{font-size:18px;color:#fff;margin-bottom:8px}
-.trending-body p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:14px}
-.paid-link{display:block;font-size:11px;color:var(--muted);margin-top:6px}
-@media(max-width:768px){.trending-grid{grid-template-columns:1fr}}
-</style>
-<style>
-.research-section{scroll-margin-top:88px}
-.comparison-grid,.category-showcase{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.comparison-card,.category-photo-card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
-.comparison-card:hover,.category-photo-card:hover{transform:translateY(-4px);border-color:rgba(245,197,24,.42);box-shadow:0 18px 42px rgba(0,0,0,.22)}
-.comparison-card img,.category-photo-card img{display:block;width:100%;height:210px;object-fit:cover}
-.comparison-body,.category-photo-card .card-body{padding:22px}
-.comparison-body h3,.category-photo-card h3{margin:5px 0 6px;color:#fff;font-size:22px}
-.comparison-matchup{color:#f5c518;font-weight:600;line-height:1.35;margin:0 0 17px}
-.compare-label{display:block;color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
-.compare-points{display:flex;flex-wrap:wrap;gap:7px;list-style:none;padding:0;margin:0 0 19px}
-.compare-points li{padding:6px 9px;border:1px solid rgba(255,255,255,.09);border-radius:999px;background:rgba(255,255,255,.035);color:#d6d6df;font-size:12px}
-.card-cta{display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:9px;background:#f5c518;color:#111!important;font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.01em}
-.card-cta:hover{background:#ffe05b}
-.category-photo-card{display:flex;flex-direction:column;color:inherit;text-decoration:none}
-.category-photo-card .card-body{display:flex;flex:1;flex-direction:column}
-.category-photo-card .card-body p{color:var(--muted);font-size:14px;line-height:1.6;margin:6px 0 18px}
-.category-photo-card .card-cta{margin-top:auto;align-self:flex-start}
-.trending-clean{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.trending-clean article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px}
-.trending-clean h3{font-size:17px;color:#fff;margin-bottom:6px}
-.trending-clean p{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px}
-.trending-clean .text-link{font-size:13px}
-.section-heading>p{max-width:520px}
-@media(max-width:980px){.comparison-grid,.category-showcase{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.comparison-grid,.category-showcase,.trending-clean{grid-template-columns:1fr}.comparison-card img,.category-photo-card img{height:225px}}
 
-.sale-card-visual{
-  width:100%;
-  height:210px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:22px;
-  background:linear-gradient(145deg,#15151f,#232331);
-  overflow:hidden;
-}
-.sale-tag-row{
-  display:flex;
-  gap:8px;
-  align-items:flex-start;
-}
-.sale-tag{
-  position:relative;
-  width:58px;
-  height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:#ff4b4b;
-  color:#30303a;
-  font-family:'Oswald',sans-serif;
-  font-size:46px;
-  font-weight:700;
-  line-height:1;
-  box-shadow:0 8px 16px rgba(0,0,0,.18);
-}
-.sale-tag::before{
-  content:"";
-  position:absolute;
-  top:-12px;
-  left:50%;
-  width:2px;
-  height:18px;
-  background:#e9e9ef;
-  transform:translateX(-50%);
-}
-.sale-tag::after{
-  content:"";
-  position:absolute;
-  top:7px;
-  left:50%;
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:#24242d;
-  transform:translateX(-50%);
-}
-.sale-gift{
-  font-size:58px;
-  line-height:1;
-  filter:drop-shadow(0 8px 10px rgba(0,0,0,.22));
-}
-@media(max-width:640px){
-  .sale-card-visual{height:225px}
-  .sale-tag{width:54px;height:72px;font-size:42px}
-}
-</style>
+html,body{margin:0;padding:0;overflow-x:hidden;overflow-y:auto;}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:#fff;color:#1a1a1a;line-height:1.7;}
+a{color:#C8972A;}
+.wrap{max-width:900px;margin:0 auto;padding:0 24px;}
+nav.sitenav{background:#0a0a1a;padding:18px 24px;}
+nav.sitenav .navwrap{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+nav.sitenav .brand{color:#fff;font-weight:900;font-size:20px;text-decoration:none;}
+nav.sitenav .brand span{color:#C8972A;}
+nav.sitenav .links{display:flex;gap:22px;flex-wrap:wrap;}
+nav.sitenav .links a{color:#ddd;text-decoration:none;font-weight:700;font-size:15px;}
+nav.sitenav .links a:hover{color:#C8972A;}
+.hero{background:linear-gradient(135deg,#0a0a1a 0%,#121212 60%,#1b1230 100%);color:#fff;text-align:center;padding:60px 24px;}
+.badge{display:inline-block;background:#C8972A;color:#0a0a1a;font-size:12px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:8px 14px;border-radius:4px;margin-bottom:16px;text-decoration:none;}
+h1{font-size:36px;font-weight:900;line-height:1.15;margin:0 auto 14px;max-width:760px;letter-spacing:-0.5px;}
+h2{font-size:26px;font-weight:900;margin:42px 0 14px;line-height:1.25;color:#0a0a1a;}
+h3{font-size:20px;font-weight:900;margin:26px 0 8px;color:#0a0a1a;}
+p{font-size:17px;margin:0 0 18px;color:#333;}
+.article-body{padding:46px 0 20px;}
+.card{border:1px solid #e7e0d0;background:#f7f4ec;border-radius:10px;padding:24px;margin:26px 0;}
+.card h3{margin-top:0;}
+.cta{background:#0a0a1a;color:#fff;text-align:center;padding:48px 24px;border-radius:14px;margin:50px 0 20px;}
+.cta h2{color:#fff;margin-top:0;}
+.cta p{color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto 22px;}
+.btn-primary{display:inline-block;background:#C8972A;color:#0a0a1a;font-weight:900;padding:15px 30px;border-radius:8px;text-decoration:none;font-size:16px;}
+.btn-secondary{display:inline-block;background:transparent;color:#fff;font-weight:700;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:15px;border:2px solid rgba(200,151,42,0.6);margin-left:10px;}
+.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:30px 0;}
+.resource-card{border:1px solid #e7e0d0;border-radius:10px;padding:22px;text-decoration:none;color:#1a1a1a;display:block;transition:0.15s;}
+.resource-card:hover{border-color:#C8972A;box-shadow:0 4px 14px rgba(200,151,42,0.15);}
+.resource-card .tag{display:inline-block;background:#f7f4ec;color:#8a6d1a;font-size:11px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:10px;}
+.resource-card h3{margin:0 0 8px;font-size:18px;}
+.resource-card p{font-size:14px;color:#555;margin:0;}
+.resource-card img{display:block;width:calc(100% + 44px);height:150px;object-fit:cover;margin:-22px -22px 20px;}
+.resource-card{overflow:hidden;}
+.video-section{margin:56px 0 20px;}
+.video-section-intro{max-width:720px;margin-bottom:22px;}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:28px 0;}
+.video-card{display:block;overflow:hidden;border:1px solid #e7e0d0;border-radius:12px;background:#fff;color:#1a1a1a;text-decoration:none;transition:transform .15s,box-shadow .15s,border-color .15s;}
+.video-card:hover{transform:translateY(-3px);border-color:#C8972A;box-shadow:0 8px 22px rgba(200,151,42,0.16);}
+.video-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#f7f4ec;}
+.video-card-body{padding:16px 18px 18px;}
+.video-card .tag{display:inline-block;background:#f7f4ec;color:#8a6d1a;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:4px 9px;border-radius:4px;margin-bottom:9px;}
+.video-card h3{font-size:17px;line-height:1.25;margin:0 0 7px;}
+.video-card p{font-size:14px;color:#555;margin:0;}
+.news-item{border-bottom:1px solid #eee;padding:20px 0;}
+.news-item .date{font-size:13px;color:#999;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;}
+.news-item h3{margin:6px 0 8px;}
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin:26px 0 12px;}
+.news-card{border:1px solid #e7e0d0;border-radius:10px;padding:20px;background:#fff;text-decoration:none;color:#1a1a1a;display:block;}
+.news-card:hover{border-color:#C8972A;box-shadow:0 4px 14px rgba(200,151,42,0.15);}
+.news-card .date{color:#8a6d1a;}
+.news-card h3{font-size:18px;margin:7px 0 8px;}
+.news-card p{font-size:14px;color:#555;margin:0;}
+.blog-panel{margin:46px 0 20px;}
+.blog-panel details{border:1px solid #e7e0d0;border-radius:10px;background:#f7f4ec;padding:0 20px;}
+.blog-panel summary{cursor:pointer;font-size:22px;font-weight:900;color:#0a0a1a;padding:20px 0;}
+.blog-panel summary::marker{color:#C8972A;}
+.blog-panel .resource-grid{margin:0 0 24px;}
+.section-anchor{scroll-margin-top:24px;}
+footer{background:#f7f4ec;text-align:center;padding:40px 24px 30px;color:#666;font-size:13px;margin-top:60px;}
+footer .footlinks{margin-bottom:14px;}
+footer .footlinks a{color:#8a6d1a;text-decoration:none;font-weight:700;margin:0 10px;}
+footer .footlinks a:hover{text-decoration:underline;}
+.byline{color:#888;font-size:14px;margin-bottom:6px;}
+.eligibility-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;}
+.eligibility-table th,.eligibility-table td{border:1px solid #e7e0d0;padding:12px;text-align:left;}
+.eligibility-table th{background:#0a0a1a;color:#fff;}
+@media(max-width:600px){h1{font-size:28px;} .hero{padding:44px 20px;} .btn-secondary{margin-left:0;margin-top:10px;display:inline-block;}}
+.checklist-modal[hidden]{display:none;}
+.checklist-modal .d-none{display:none!important;}
+.checklist-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;}
+.checklist-modal__backdrop{position:absolute;inset:0;background:rgba(10,10,26,0.82);backdrop-filter:blur(3px);}
+.checklist-modal__dialog{position:relative;width:min(100%,480px);max-height:calc(100vh - 40px);overflow:auto;background:#fff;border:1px solid #e7e0d0;border-radius:14px;padding:32px;box-shadow:0 20px 70px rgba(0,0,0,0.35);}
+.checklist-modal__close{position:absolute;top:10px;right:12px;width:40px;height:40px;border:0;background:transparent;color:#666;font-size:30px;line-height:1;cursor:pointer;}
+.checklist-modal__dialog h2{margin:0 34px 10px 0;font-size:26px;}
+.checklist-modal__dialog p{font-size:16px;}
+.checklist-form label{display:block;font-weight:800;margin-bottom:7px;color:#0a0a1a;}
+.checklist-form input{width:100%;padding:13px 14px;border:1px solid #bbb;border-radius:8px;font:inherit;font-size:16px;}
+.checklist-form button,.checklist-download{display:block;width:100%;border:0;background:#C8972A;color:#0a0a1a;font:inherit;font-weight:900;padding:14px 20px;border-radius:8px;text-align:center;text-decoration:none;cursor:pointer;}
+.checklist-form button[hidden],.checklist-form [hidden],.checklist-form .loading{display:none!important;}
+.checklist-privacy{margin:12px 0 0!important;color:#666!important;font-size:12px!important;text-align:center;}
+.checklist-success{text-align:center;}
+body.checklist-modal-open{overflow:hidden;}
+@media(max-width:480px){.checklist-modal{padding:12px;}.checklist-modal__dialog{padding:28px 20px 22px;max-height:calc(100vh - 24px);}.checklist-modal__dialog h2{font-size:23px;}}
 
+
+</style>
 </head>
 <body>
-  <nav><div class="nav-inner"><a class="nav-logo" href="index.html"><img src="sls-logo.png" alt="Simply LED Store logo"><span>Simply LED Store</span></a><div class="nav-links" id="navLinks"><a class="nav-link active" href="index.html">Home</a><a class="nav-link" href="#comparisons">Comparisons</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#guides">Buying Guides</a><a class="nav-link" href="#deals">Deals</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link" href="about.html">About</a></div><button class="hamburger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
-  <header class="comparison-hero"><div class="hero-copy"><div class="hero-badge"><div class="badge-dot"></div><span>Lifestyle. Essentials. Deals.</span></div><h1>Compare smarter.<br><span class="accent">Shop better.</span></h1><p>Simply LED Store is a practical product-comparison resource for everyday essentials, useful upgrades, and the decisions behind a better buy.</p><div class="button-row"><a class="btn" href="#comparisons">Explore comparisons</a><a class="btn btn-secondary" href="#guides">Read buying guides</a></div><p class="hero-note"><strong>LED</strong> now means Lifestyle. Essentials. Deals. LED safety remains one of our categories, alongside home, kitchen, outdoor, pet, and everyday products.</p></div><div class="hero-panel"><img src="produce-washer-hero.png" alt="Fresh produce beside a rechargeable kitchen gadget"><div class="hero-panel-caption"><span>Featured category</span><strong>Practical kitchen essentials</strong><a href="produce-washer.html">View the guide</a></div></div></header>
-  <section class="section intro-band"><div class="section-inner intro-grid"><div><div class="section-label"><span>How we help</span></div><h2>Useful information before you click buy</h2></div><p>We organize product research into clear comparisons, practical guides, and current shopping links. Product details, prices, availability, and reviews can change, so confirm the live listing before ordering.</p></div></section>
-  
-<section class="section research-section" id="comparisons">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div>
-        <div class="section-label"><span>Featured comparisons</span></div>
-        <h2>Featured Product Comparisons</h2>
+
+<nav class="sitenav">
+  <div class="navwrap">
+    <a class="brand" href="#top">501c3 <span>Made Simple</span></a>
+    <div class="links">
+      <a href="#top">Home</a>
+      <a href="#resources">Free Resources</a>
+      <a href="#news">Nonprofit News</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero section-anchor" id="top">
+  <div class="wrap">
+    <a class="badge" href="#resources">Nonprofit Resource Hub</a>
+    <h1>Free &amp; Discounted Resources for 501(c)(3) Nonprofits</h1>
+    <p style="font-size:18px;color:rgba(255,255,255,0.78);max-width:640px;margin:0 auto;">News, guides, and legitimate free programs to help you run and grow your nonprofit — no course to buy, no catch.</p>
+    <div style="margin-top:30px;">
+      <a class="btn-primary" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">Subscribe on YouTube</a>
+      <a class="btn-secondary" href="#checklist-signup" data-checklist-signup>Free Quick Start Checklist</a>
+    </div>
+  </div>
+</section>
+
+<main class="wrap article-body">
+  <h2 class="section-anchor" id="resources">Free &amp; Discounted Resources</h2>
+  <p>Every one of these programs is real, currently active, and available to eligible 501(c)(3) organizations. We link directly to the official program — no affiliate links, no sign-up walls on our end.</p>
+
+  <div class="resource-grid">
+    
+    <a class="resource-card" href="/articles/google-ad-grants.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Digital analytics dashboard representing nonprofit advertising">
+      <div class="tag">Google Advertising</div>
+      <h3>Google Ad Grants: $10,000/Month in Free Ads</h3>
+      <p>How eligible 501(c)(3)s claim free Google search advertising every month.</p>
+    </a>
+    <a class="resource-card" href="/articles/good360.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Warehouse inventory representing donated products">
+      <div class="tag">Product Donations</div>
+      <h3>Good360: Free Brand-New Product Pallets</h3>
+      <p>How verified nonprofits receive donated inventory from Fortune 500 companies.</p>
+    </a>
+    <a class="resource-card" href="/articles/liquidonate.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Cardboard boxes prepared for donated nonprofit supplies">
+      <div class="tag">Product Donations</div>
+      <h3>LiquiDonate: $100M+ in Free Products</h3>
+      <p>How retailers' unsellable inventory becomes free supplies for your nonprofit.</p>
+    </a>
+    <a class="resource-card" href="/articles/naeir.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Organized office space representing corporate surplus supplies">
+      <div class="tag">Free Supplies</div>
+      <h3>NAEIR: Free Corporate Surplus Merchandise</h3>
+      <p>How your 501(c)(3) status unlocks donated office and organizational supplies.</p>
+    </a>
+    <a class="resource-card" href="/articles/volunteer-management-software.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Team planning volunteer activities around a table">
+      <div class="tag">Free Software</div>
+      <h3>Free Volunteer Management Software</h3>
+      <p>Tools that help you recruit, schedule, and track volunteers at no cost.</p>
+    </a>
+    <a class="resource-card" href="/articles/techsoup.html">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Laptop and digital technology for nonprofit software">
+      <div class="tag">Free Software</div>
+      <h3>TechSoup: Thousands in Free Nonprofit Software</h3>
+      <p>Microsoft, Adobe, QuickBooks and more, free or deeply discounted.</p>
+    </a>
+    <a class="resource-card" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="People collaborating on a nonprofit fundraising plan">
+      <div class="tag">Fundraising</div>
+      <h3>Peer-to-Peer Fundraising</h3>
+      <p>Turn supporters into fundraisers for your nonprofit.</p>
+    </a>
+    <a class="resource-card" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Laptop displaying a website for a nonprofit organization">
+      <div class="tag">Website Tools</div>
+      <h3>Free Nonprofit Website Builders</h3>
+      <p>Create a professional online presence at little or no cost.</p>
+    </a>
+    <a class="resource-card" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Grant research documents and planning notes on a desk">
+      <div class="tag">Grant Research</div>
+      <h3>Free Grant Research Tools</h3>
+      <p>Find grant opportunities and organize your nonprofit search.</p>
+    </a>
+    <a class="resource-card" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Social media applications representing nonprofit content planning">
+      <div class="tag">Social Media</div>
+      <h3>Free Social Media Management</h3>
+      <p>Plan and manage your nonprofit’s social channels.</p>
+    </a>
+    <a class="resource-card" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Email marketing planning on a laptop">
+      <div class="tag">Email Marketing</div>
+      <h3>Free Email Marketing Platforms</h3>
+      <p>Build and grow an email list for your nonprofit.</p>
+    </a>
+  </div>
+
+  <section class="section-anchor" id="news" aria-labelledby="news-heading">
+    <h2 id="news-heading">Nonprofit News &amp; Updates</h2>
+    <p>Reliable starting points for nonprofit updates, grant information, and official guidance.</p>
+    <div class="news-grid">
+      <a class="news-card" target="_blank" rel="noopener" href="https://www.irs.gov/charities-non-profits">
+        <div class="date">Official Source</div>
+        <h3>IRS Charities and Nonprofits</h3>
+        <p>Tax information, compliance guidance, and updates for nonprofit organizations.</p>
+      </a>
+      <a class="news-card" target="_blank" rel="noopener" href="https://www.grants.gov/learn-grants/grant-programs.html">
+        <div class="date">Official Source</div>
+        <h3>Grants.gov Grant Programs</h3>
+        <p>Browse federal grant programs and learn how the federal grant process works.</p>
+      </a>
+      <a class="news-card" target="_blank" rel="noopener" href="https://candid.org/">
+        <div class="date">Nonprofit Information</div>
+        <h3>Candid Nonprofit News and Data</h3>
+        <p>Research, nonprofit data, and practical information for organizations and funders.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="blog-panel section-anchor" id="blog" aria-labelledby="blog-heading">
+    <details open>
+      <summary id="blog-heading">Blog &amp; Guides</summary>
+      <div class="resource-grid">
+        <a class="resource-card" href="#resources">
+          <div class="tag">Getting Started</div>
+          <h3>Build Your Nonprofit Foundation</h3>
+          <p>Start with a clear mission, basic structure, and practical next steps.</p>
+        </a>
+        <a class="resource-card" href="#resources">
+          <div class="tag">Free Resources</div>
+          <h3>Find Tools Your Nonprofit Can Use</h3>
+          <p>Explore free and discounted software, supplies, advertising, and support.</p>
+        </a>
+        <a class="resource-card" href="#checklist-signup" data-checklist-signup>
+          <div class="tag">Checklist</div>
+          <h3>Get the Nonprofit Quick Start Checklist</h3>
+          <p>Receive a simple checklist to help organize your next steps.</p>
+        </a>
       </div>
-      <p>See popular products side by side before you buy.</p>
-    </div>
+    </details>
+  </section>
 
-    <div class="comparison-grid">
-      <article class="comparison-card" id="air-fryers-comparison"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Modern countertop appliances in a bright kitchen" loading="lazy"><div class="comparison-body"><span class="card-kicker">Air Fryers</span><h3>Ninja vs Instant vs Gourmia</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Capacity</li><li>Cooking functions</li><li>Cleanup</li><li>Counter space</li><li>Best for</li></ul><a class="card-cta" href="#air-fryers-comparison">Compare Air Fryers</a></div></article>
-      <article class="comparison-card" id="robot-vacuums-comparison"><img src="https://images.unsplash.com/photo-1762500825301-569628303acb?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Robot vacuum cleaning a modern living room" loading="lazy"><div class="comparison-body"><span class="card-kicker">Robot Vacuums</span><h3>Roomba vs Shark vs Eufy</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Navigation</li><li>Pet hair</li><li>Self-emptying</li><li>Maintenance</li><li>Best for</li></ul><a class="card-cta" href="#robot-vacuums-comparison">Compare Robot Vacuums</a></div></article>
-      <article class="comparison-card" id="earbuds-comparison"><img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Wireless earbuds and charging case" loading="lazy"><div class="comparison-body"><span class="card-kicker">Wireless Earbuds</span><h3>Apple vs Samsung vs Popular Alternatives</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Battery life</li><li>Noise cancellation</li><li>Fit</li><li>Compatibility</li><li>Best for</li></ul><a class="card-cta" href="#earbuds-comparison">Compare Earbuds</a></div></article>
-      <article class="comparison-card" id="coffee-makers-comparison"><img src="https://images.unsplash.com/photo-1674504866626-fe4f19f68564?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Coffee maker on a clean kitchen counter" loading="lazy"><div class="comparison-body"><span class="card-kicker">Coffee Makers</span><h3>Keurig vs Ninja vs Nespresso</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Brew types</li><li>Serving sizes</li><li>Cleanup</li><li>Pod cost</li><li>Best for</li></ul><a class="card-cta" href="#coffee-makers-comparison">Compare Coffee Makers</a></div></article>
-      <article class="comparison-card" id="cordless-vacuums-comparison"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Bright, freshly cleaned home interior" loading="lazy"><div class="comparison-body"><span class="card-kicker">Cordless Vacuums</span><h3>Shark vs Dyson vs Tineco</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Suction</li><li>Runtime</li><li>Weight</li><li>Attachments</li><li>Best for</li></ul><a class="card-cta" href="#cordless-vacuums-comparison">Compare Cordless Vacuums</a></div></article>
-      <article class="comparison-card" id="security-cameras-comparison"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Smart home controls representing connected security cameras" loading="lazy"><div class="comparison-body"><span class="card-kicker">Security Cameras</span><h3>Ring vs Blink vs Arlo</h3><span class="compare-label">Compare</span><ul class="compare-points"><li>Video quality</li><li>Storage</li><li>Subscription cost</li><li>Alerts</li><li>Installation</li></ul><a class="card-cta" href="#security-cameras-comparison">Compare Security Cameras</a></div></article>
-    </div>
+  <section class="card section-anchor" id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About 501c3 Made Simple</h2>
+    <p>501c3 Made Simple helps nonprofit founders understand the steps, documents, tools, and free resources involved in building a compliant organization.</p>
+    <p>Our goal is to make nonprofit information easier to understand so you can make informed decisions and know when professional legal, tax, or accounting advice is needed.</p>
+    <p><strong>Questions?</strong> Email us at <a href="mailto:501c3madesimple@gmail.com">501c3madesimple@gmail.com</a>.</p>
+  </section>
+
+  <div class="cta">
+    <h2>New Videos Every Week</h2>
+    <p>We break down a new free nonprofit resource every week on YouTube — no fluff, just what it is and how to get it.</p>
+    <a class="btn-primary" target="_blank" rel="noopener" href="https://www.youtube.com/@501c3madesimple">Subscribe on YouTube</a>
   </div>
-</section>
+</main>
 
-  
-<section class="section dark" id="trending-amazon">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div><div class="section-label"><span>Trending finds</span></div><h2>Trending Amazon Finds</h2></div>
-      <p>A short list of interesting products to research further — not a wall of ads.</p>
-    </div>
-    <div class="trending-clean"><article><span class="card-kicker">Beauty</span><h3>Sacheu Lip Liner STAY-N Peel Off Lip Stain</h3><p>Peel-off lip stain available in multiple shades.</p><a class="text-link" href="https://www.amazon.com/Sacheu-Lip-Liner-Stay-N-Hyaluronic/dp/B0BVPNQW1C" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Kitchen</span><h3>Tovolo Mini Ice Squeeze & Release Cylinder</h3><p>Compact squeeze-and-release ice mold designed for small-format ice.</p><a class="text-link" href="https://www.amazon.com/Tovolo-Mini-Cylinder-Squeeze-Release/dp/B0CRT9VTGM" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Home</span><h3>Homeika Cordless Stick Vacuum</h3><p>Cordless stick-vacuum options for everyday floor cleaning.</p><a class="text-link" href="https://www.amazon.com/homeika-cordless-stick-vacuum/s?k=homeika+cordless+stick+vacuum" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Beauty</span><h3>Medicube Glass Glow Skincare Set</h3><p>A skincare set to compare by included products, routine, and current availability.</p><a class="text-link" href="https://www.amazon.com/s?k=Medicube+Glass+Glow+Skincare+Set" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Lifestyle</span><h3>BrüMate Resa Flip 35-Ounce Tumbler</h3><p>Large flip-top tumbler for hydration at home, work, or on the go.</p><a class="text-link" href="https://www.amazon.com/s?k=Brumate+Resa+Flip+35+oz" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article><article><span class="card-kicker">Electronics</span><h3>Magic John Screen Protectors</h3><p>Multi-pack screen protectors with an alignment-style installation system.</p><a class="text-link" href="https://www.amazon.com/s?k=Magic+John+Screen+Protector" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon →</a><span class="paid-link">(paid link)</span></article></div>
-    <p style="font-size:11px;color:var(--muted);margin-top:18px;">As an Amazon Associate I earn from qualifying purchases.</p>
+
+<footer>
+  <div class="footlinks">
+    <a href="#about">About</a>
+    <a href="mailto:501c3madesimple@gmail.com">Contact</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/terms-of-use.html">Terms of Use</a>
   </div>
-</section>
+  &copy; 2026 501c3 Made Simple<br>
+  Educational information only. 501c3 Made Simple does not provide legal, tax, or financial advice. Links to third-party programs are provided for informational purposes; eligibility and terms are determined solely by each respective organization.
+</footer>
 
-<section class="section research-section" id="categories">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div><div class="section-label"><span>Browse categories</span></div><h2>Shop by Category</h2></div>
-      <p>Start with the type of product you're looking for.</p>
+<div class="checklist-modal" id="checklist-signup" hidden>
+  <div class="checklist-modal__backdrop" data-checklist-close></div>
+  <section class="checklist-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="checklist-title">
+    <button class="checklist-modal__close" type="button" aria-label="Close checklist signup" data-checklist-close>&times;</button>
+    <div class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-45935681" id="mlb2-45935681">
+      <div class="row-form ml-block-form">
+        <h2 id="checklist-title">Free Quick Start Checklist</h2>
+        <p>Enter your email to join 501c3 Made Simple and get immediate access to the checklist.</p>
+        <form class="ml-block-form checklist-form" action="https://assets.mailerlite.com/jsonp/2619900/forms/198637292654429839/subscribe" method="post" target="_blank" novalidate>
+          <div class="ml-form-fieldRow ml-last-item">
+            <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+              <label for="checklist-email">Email address</label>
+              <input id="checklist-email" class="form-control" type="email" name="fields[email]" placeholder="you@example.com" autocomplete="email" aria-required="true" required>
+            </div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <div class="ml-form-embedSubmit">
+            <button class="primary" type="submit">Get the Checklist</button>
+            <button class="loading" type="button" disabled hidden>Sending&hellip;</button>
+          </div>
+          <p class="checklist-status ml-server-error d-none" role="alert" aria-live="polite"></p>
+        </form>
+        <p class="checklist-privacy">We respect your privacy. Unsubscribe anytime.</p>
+      </div>
+      <div class="row-success checklist-success" hidden>
+        <h2>You're all set!</h2>
+        <p>Your checklist download should start automatically. If it does not, use the button below.</p>
+        <a class="checklist-download" data-checklist-download>Download My Checklist</a>
+      </div>
     </div>
-    <div class="category-showcase">
-      <a class="category-photo-card" id="category-home-kitchen" href="produce-washer.html"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Bright modern kitchen" loading="lazy"><div class="card-body"><span class="card-kicker">Home &amp; Kitchen</span><h3>Home &amp; Kitchen</h3><p>Appliances, cookware, organizers, and practical upgrades for everyday routines.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-electronics" href="#category-electronics"><img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Everyday consumer electronics on display" loading="lazy"><div class="card-body"><span class="card-kicker">Electronics</span><h3>Electronics</h3><p>Audio, charging, mobile accessories, and useful technology for daily life.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-smart-home" href="#category-smart-home"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Smart home controls in a modern interior" loading="lazy"><div class="card-body"><span class="card-kicker">Smart Home</span><h3>Smart Home</h3><p>Cameras, doorbells, automation, and connected products for a more responsive home.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-cleaning" href="#category-cleaning"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Professional cleaning in a bright home" loading="lazy"><div class="card-body"><span class="card-kicker">Cleaning</span><h3>Cleaning</h3><p>Vacuums, floor care, and tools that make regular cleaning easier to manage.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-beauty" href="#category-beauty"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Beauty and skincare products arranged on a table" loading="lazy"><div class="card-body"><span class="card-kicker">Beauty &amp; Personal Care</span><h3>Beauty &amp; Personal Care</h3><p>Skincare, grooming, and self-care products considered by routine and value.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-outdoor-safety" href="joggers.html"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Outdoor landscape for active and safety gear" loading="lazy"><div class="card-body"><span class="card-kicker">Outdoor &amp; Safety</span><h3>Outdoor &amp; Safety</h3><p>Visibility, walking, running, preparedness, and practical outdoor essentials.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-pets" href="#category-pets"><img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Dog relaxing at home with its owner" loading="lazy"><div class="card-body"><span class="card-kicker">Pet Products</span><h3>Pet Products</h3><p>Everyday gear for feeding, grooming, walking, play, comfort, and cleanup.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-travel-lifestyle" href="#category-travel-lifestyle"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=1200&amp;q=82" alt="Traveler looking out over a scenic destination" loading="lazy"><div class="card-body"><span class="card-kicker">Travel &amp; Lifestyle</span><h3>Travel &amp; Lifestyle</h3><p>Useful products for commutes, trips, workdays, hydration, and life on the go.</p><span class="card-cta">Explore Category</span></div></a>
-      <a class="category-photo-card" id="category-deals-trending" href="#trending-amazon"><div class="sale-card-visual" role="img" aria-label="Sale graphic"><div class="sale-tag-row"><span class="sale-tag">S</span><span class="sale-tag">A</span><span class="sale-tag">L</span><span class="sale-tag">E</span></div><div class="sale-gift" aria-hidden="true">🎁</div></div><div class="card-body"><span class="card-kicker">Deals &amp; Trending Finds</span><h3>Deals &amp; Trending Finds</h3><p>A focused watchlist of popular products and timely finds worth researching.</p><span class="card-cta">Explore Category</span></div></a>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
-  <section class="section" id="guides"><div class="section-inner"><div class="section-heading"><div><div class="section-label"><span>Buying guides</span></div><h2>Helpful reads for real routines</h2></div><a class="text-link" href="blog.html">View all articles &rarr;</a></div><div class="grid-3 guide-grid"><a class="card card-link" href="night-walking-safety.html"><div class="card-body"><span class="card-kicker">Outdoor safety</span><h3>Night walking safety</h3><p>Practical visibility and route-planning ideas for evening walkers.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="runner-safety-gear.html"><div class="card-body"><span class="card-kicker">Running</span><h3>Safety gear for early runs</h3><p>A simple checklist for runners heading out before sunrise.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="dog-walking-safety.html"><div class="card-body"><span class="card-kicker">Pets</span><h3>Dog walking after dark</h3><p>Ways to make people, pets, leashes, and paths easier to see.</p><span class="text-link">Read article &rarr;</span></div></a></div></div></section>
-  <section class="section dark" id="deals"><div class="section-inner deal-band"><div><div class="section-label"><span>Deals &amp; live offers</span></div><h2>Check the current details at the source</h2><p>Prices, coupons, ratings, shipping, and availability change. Our shopping links take you to the live retailer page so you can review the current information before buying.</p></div><div><a class="btn" href="https://amzn.to/499lx2I" target="_blank" rel="noopener noreferrer nofollow sponsored">Check featured safety light</a><span class="paid-link">(paid link)</span></div></div></section>
-  <section class="section disclosure"><div class="content-inner"><h2>Our editorial approach</h2><p><strong>Affiliate note:</strong> Product-specific affiliate links are added only after the destination is verified. General comparison links may lead to Amazon search results and are not represented as product-specific recommendations.</p><p>We aim to make shopping research easier by explaining what to compare and linking to live product pages. We do not publish invented prices, ratings, discounts, or reviews. As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p></div></section>
-  <footer><div class="footer-inner"><div class="footer-grid"><div><div class="footer-logo">Simply LED Store</div><p class="footer-desc">Lifestyle. Essentials. Deals.<br>Practical product comparisons and buying guides.</p></div><div><div class="footer-heading">Explore</div><ul class="footer-links"><li><a href="#comparisons">Comparisons</a></li><li><a href="#categories">Categories</a></li><li><a href="#guides">Buying Guides</a></li><li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li></ul></div><div><div class="footer-heading">Disclosure</div><p class="footer-desc">As an Amazon Associate I earn from qualifying purchases. Prices and availability may change at any time.</p></div></div><div class="footer-bottom">&copy; 2026 Simply LED Store &middot; Lifestyle. Essentials. Deals.</div></div></footer>
-  <script src="site.js"></script>
-
-<script>
-document.addEventListener('click', function(e){
-  const a=e.target.closest('a[href^="#"]');
-  if(!a) return;
-  const id=a.getAttribute('href');
-  if(id==='#') return;
-  const target=document.querySelector(id);
-  if(target){
-    e.preventDefault();
-    target.scrollIntoView({behavior:'smooth',block:'start'});
-    history.replaceState(null,'',id);
-  }
-});
-</script>
+<script src="/checklist-signup.js?v=20260914"></script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"></script>
 
 </body>
 </html>

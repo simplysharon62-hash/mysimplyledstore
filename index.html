@@ -151,10 +151,169 @@
 .fiber-note{margin-top:18px;padding:16px 18px;background:rgba(255,255,255,.035);border:1px solid var(--border);border-radius:12px}
 .fiber-note p{margin:6px 0 0;color:var(--muted)}
 </style>
+
+<style>
+.supplement-shelf{margin-top:28px}
+.supplement-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.supplement-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px}
+.supplement-card h3{margin:6px 0 8px;color:#fff;font-size:21px}
+.supplement-card p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 16px}
+.supplement-card .card-cta{margin-top:4px}
+@media(max-width:820px){.supplement-grid{grid-template-columns:1fr}}
+</style>
+
+
+<style>
+.spokesperson-card{display:grid;grid-template-columns:220px 1fr;gap:26px;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;margin-top:24px}
+.spokesperson-avatar{min-height:220px;border-radius:16px;background:linear-gradient(145deg,#14141f,#232332);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px}
+.spokesperson-avatar strong{font-family:'Oswald',sans-serif;font-size:30px;color:#fff;line-height:1.1}
+.spokesperson-copy h3{margin:6px 0 10px;color:#fff;font-size:28px}
+.spokesperson-copy p{color:var(--muted);line-height:1.7;margin:0 0 12px}
+.blog-feature{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:26px;margin-top:28px}
+.blog-feature h3{color:#fff;font-size:28px;margin:8px 0 12px}
+.blog-feature h4{color:#fff;font-size:20px;margin:22px 0 8px}
+.blog-feature p{color:var(--muted);line-height:1.75;margin:0 0 14px}
+.blog-feature ul{color:#d9d9e2;line-height:1.7;padding-left:20px}
+.experience-box{border-left:4px solid #f5c518;background:rgba(245,197,24,.06);padding:16px 18px;border-radius:10px;margin:18px 0}
+@media(max-width:720px){.spokesperson-card{grid-template-columns:1fr}.spokesperson-avatar{min-height:160px}}
+</style>
+
 </head>
 <body>
-  <nav><div class="nav-inner"><a class="nav-logo" href="index.html"><img src="sls-logo.png" alt="Simply LED Store logo"><span>Simply LED Store</span></a><div class="nav-links" id="navLinks"><a class="nav-link active" href="index.html">Home</a><a class="nav-link" href="#comparisons">Comparisons</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#guides">Buying Guides</a><a class="nav-link" href="#wellness">Wellness</a><a class="nav-link" href="#deals">Deals</a><a class="nav-link" href="#healing-thyself">Healing Thyself</a><a class="nav-link" href="about.html">About</a></div><button class="hamburger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
+  <nav><div class="nav-inner"><a class="nav-logo" href="index.html"><img src="sls-logo.png" alt="Simply LED Store logo"><span>Simply LED Store</span></a><div class="nav-links" id="navLinks"><a class="nav-link active" href="index.html">Home</a><a class="nav-link" href="#supplements">Supplements</a><a class="nav-link" href="#meet-godwin">Meet Godwin</a><a class="nav-link" href="#comparisons">Comparisons</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#guides">Buying Guides</a><a class="nav-link" href="#wellness">Wellness</a><a class="nav-link" href="#deals">Deals</a><a class="nav-link" href="#healing-thyself">Healing Thyself</a><a class="nav-link" href="about.html">About</a></div><button class="hamburger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
   <header class="comparison-hero"><div class="hero-copy"><div class="hero-badge"><div class="badge-dot"></div><span>Lifestyle. Essentials. Deals.</span></div><h1>Compare smarter.<br><span class="accent">Shop better.</span></h1><p>Simply LED Store is a practical product-comparison resource for everyday essentials, useful upgrades, and the decisions behind a better buy.</p><div class="button-row"><a class="btn" href="#comparisons">Explore comparisons</a><a class="btn btn-secondary" href="#guides">Read buying guides</a></div><p class="hero-note"><strong>LED</strong> now means Lifestyle. Essentials. Deals. LED safety remains one of our categories, alongside home, kitchen, outdoor, pet, and everyday products.</p></div><div class="hero-panel"><img src="produce-washer-hero.png" alt="Fresh produce beside a rechargeable kitchen gadget"><div class="hero-panel-caption"><span>Featured category</span><strong>Practical kitchen essentials</strong><a href="produce-washer.html">View the guide</a></div></div></header>
+
+<section class="section research-section" id="wellness">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div><div class="section-label"><span>Wellness spotlight</span></div><h2>Fiber &amp; Digestive Wellness</h2></div>
+      <p>Compare everyday fiber options by formula, convenience, and the features that matter to your routine.</p>
+    </div>
+    <div class="wellness-feature">
+      <article class="wellness-copy">
+        <span class="personal-pick">What I personally use</span>
+        <h2>SunFiber GI</h2>
+        <p>I currently use SunFiber GI as part of my own routine. I like that it dissolves easily and combines prebiotic fiber with probiotics in one product.</p>
+        <div class="wellness-badges"><span>5 g prebiotic fiber</span><span>8 billion CFU</span><span>Low-FODMAP formula</span><span>30 servings</span></div>
+        <p class="tiny-note">Personal experience can vary. This site shares product information and shopping links, not medical advice.</p>
+        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#fiber-comparison">Compare fiber supplements</a></div>
+        <span class="paid-link">(paid link)</span>
+      </article>
+      <article class="wellness-card">
+        <span class="card-kicker">Featured comparison</span>
+        <h3>SunFiber GI vs Benefiber vs Metamucil</h3>
+        <p>A simple side-by-side look at fiber source, added probiotics, mixing style, and who each option may suit best.</p>
+        <ul class="compare-points"><li>Fiber source</li><li>Probiotics</li><li>Mixing</li><li>Serving style</li><li>Everyday fit</li></ul>
+        <a class="card-cta" href="#fiber-comparison">View Fiber Comparison</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section research-section" id="supplements">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div>
+        <div class="section-label"><span>Our supplement shelf</span></div>
+        <h2>Supplements Godwin Uses</h2>
+      </div>
+      <p>Keep the fiber and the rest of Godwin's everyday supplements together in one easy-to-find place.</p>
+    </div>
+
+    <div class="supplement-grid">
+      <article class="supplement-card">
+        <span class="personal-pick">Godwin uses this</span>
+        <h3>Daily Supplement #1</h3>
+        <p>One of the supplements currently used in Godwin's daily routine. Open the live Amazon listing to review the current product label, ingredients, directions, and price.</p>
+        <a class="card-cta" href="https://link.amazon/B07YB6KEI" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon</a>
+        <span class="paid-link">(paid link)</span>
+      </article>
+
+      <article class="supplement-card">
+        <span class="personal-pick">Godwin uses this</span>
+        <h3>Daily Supplement #2</h3>
+        <p>Another supplement in Godwin's current routine. Check the live Amazon listing for the most up-to-date formula, serving information, and product details.</p>
+        <a class="card-cta" href="https://link.amazon/B03gvUULs" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon</a>
+        <span class="paid-link">(paid link)</span>
+      </article>
+
+      <article class="supplement-card">
+        <span class="personal-pick">Godwin uses this</span>
+        <h3>Daily Supplement #3</h3>
+        <p>Part of Godwin's supplement routine. Use the Amazon link to see the current listing, label, directions, availability, and price before purchasing.</p>
+        <a class="card-cta" href="https://link.amazon/B0iIrHLnc" target="_blank" rel="noopener noreferrer nofollow sponsored">View on Amazon</a>
+        <span class="paid-link">(paid link)</span>
+      </article>
+    </div>
+
+    <p class="tiny-note" style="margin-top:18px">As an Amazon Associate I earn from qualifying purchases. Personal experience can vary. Review the current product label and speak with a qualified healthcare professional or pharmacist about supplement use, especially if you take medications.</p>
+  </div>
+</section>
+
+
+<section class="section research-section" id="meet-godwin">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div>
+        <div class="section-label"><span>Wellness spokesperson</span></div>
+        <h2>Meet Godwin</h2>
+      </div>
+      <p>A familiar face for the wellness products and routines featured on Simply LED Store.</p>
+    </div>
+    <div class="spokesperson-card">
+      <div class="spokesperson-avatar" role="img" aria-label="Godwin wellness spokesperson placeholder">
+        <strong>Godwin<br>Wellness Spokesperson</strong>
+      </div>
+      <div class="spokesperson-copy">
+        <span class="personal-pick">Real routine. Real experience.</span>
+        <h3>Godwin shares what he actually uses</h3>
+        <p>Godwin is the wellness spokesperson for our Healing Thyself section. He shares supplements and wellness products that are part of his own routine, along with his personal experience using them.</p>
+        <p>His experience is personal and is not medical advice. We encourage readers to review current product labels and speak with a qualified healthcare professional or pharmacist when appropriate.</p>
+        <a class="card-cta" href="#supplements">See Godwin's Supplements</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="section research-section" id="fiber-comparison">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div><div class="section-label"><span>Fiber comparison</span></div><h2>SunFiber GI vs Benefiber vs Metamucil</h2></div>
+      <p>Compare label-level differences and everyday convenience before choosing a fiber supplement.</p>
+    </div>
+    <div class="fiber-note"><strong>How to read this comparison</strong><p>This comparison focuses on product labels and everyday use. It does not rank medical outcomes or replace advice from a clinician or pharmacist.</p></div>
+    <div class="fiber-compare-wrap">
+      <table class="fiber-compare-table">
+        <thead><tr><th>Feature</th><th>SunFiber GI</th><th>Benefiber</th><th>Metamucil</th></tr></thead>
+        <tbody>
+          <tr><td>Primary positioning</td><td>Prebiotic fiber + probiotic blend</td><td>Daily soluble fiber supplement</td><td>Psyllium-based fiber supplement</td></tr>
+          <tr><td>Added probiotics</td><td>Yes — the product shown on this site lists 8 billion CFU</td><td>Check current label</td><td>Check current label</td></tr>
+          <tr><td>Mixing style</td><td>Powder designed to dissolve into drinks</td><td>Powder options designed for mixing</td><td>Powder and other formats are sold</td></tr>
+          <tr><td>Best comparison point</td><td>Combination formula and simple daily mixing</td><td>Straightforward fiber routine</td><td>Psyllium format and product variety</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wellness-feature" style="margin-top:26px">
+      <article class="wellness-copy">
+        <span class="personal-pick">What I personally use</span>
+        <h2>SunFiber GI</h2>
+        <p>I currently use SunFiber GI myself. I like that it dissolves easily and combines prebiotic fiber with probiotics in one routine.</p>
+        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#wellness">Back to Wellness</a></div>
+        <span class="paid-link">(paid link)</span>
+        <p class="tiny-note">As an Amazon Associate I earn from qualifying purchases. Personal experience can vary. Product details can change, so review the current label and retailer listing before purchase.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
   <section class="section intro-band"><div class="section-inner intro-grid"><div><div class="section-label"><span>How we help</span></div><h2>Useful information before you click buy</h2></div><p>We organize product research into clear comparisons, practical guides, and current shopping links. Product details, prices, availability, and reviews can change, so confirm the live listing before ordering.</p></div></section>
   
 <section class="section research-section" id="comparisons">
@@ -190,63 +349,7 @@
   </div>
 </section>
 
-<section class="section research-section" id="wellness">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div><div class="section-label"><span>Wellness spotlight</span></div><h2>Fiber &amp; Digestive Wellness</h2></div>
-      <p>Compare everyday fiber options by formula, convenience, and the features that matter to your routine.</p>
-    </div>
-    <div class="wellness-feature">
-      <article class="wellness-copy">
-        <span class="personal-pick">What I personally use</span>
-        <h2>SunFiber GI</h2>
-        <p>I currently use SunFiber GI as part of my own routine. I like that it dissolves easily and combines prebiotic fiber with probiotics in one product.</p>
-        <div class="wellness-badges"><span>5 g prebiotic fiber</span><span>8 billion CFU</span><span>Low-FODMAP formula</span><span>30 servings</span></div>
-        <p class="tiny-note">Personal experience can vary. This site shares product information and shopping links, not medical advice.</p>
-        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#fiber-comparison">Compare fiber supplements</a></div>
-        <span class="paid-link">(paid link)</span>
-      </article>
-      <article class="wellness-card">
-        <span class="card-kicker">Featured comparison</span>
-        <h3>SunFiber GI vs Benefiber vs Metamucil</h3>
-        <p>A simple side-by-side look at fiber source, added probiotics, mixing style, and who each option may suit best.</p>
-        <ul class="compare-points"><li>Fiber source</li><li>Probiotics</li><li>Mixing</li><li>Serving style</li><li>Everyday fit</li></ul>
-        <a class="card-cta" href="#fiber-comparison">View Fiber Comparison</a>
-      </article>
-    </div>
-  </div>
-</section>
 
-<section class="section research-section" id="fiber-comparison">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div><div class="section-label"><span>Fiber comparison</span></div><h2>SunFiber GI vs Benefiber vs Metamucil</h2></div>
-      <p>Compare label-level differences and everyday convenience before choosing a fiber supplement.</p>
-    </div>
-    <div class="fiber-note"><strong>How to read this comparison</strong><p>This comparison focuses on product labels and everyday use. It does not rank medical outcomes or replace advice from a clinician or pharmacist.</p></div>
-    <div class="fiber-compare-wrap">
-      <table class="fiber-compare-table">
-        <thead><tr><th>Feature</th><th>SunFiber GI</th><th>Benefiber</th><th>Metamucil</th></tr></thead>
-        <tbody>
-          <tr><td>Primary positioning</td><td>Prebiotic fiber + probiotic blend</td><td>Daily soluble fiber supplement</td><td>Psyllium-based fiber supplement</td></tr>
-          <tr><td>Added probiotics</td><td>Yes — the product shown on this site lists 8 billion CFU</td><td>Check current label</td><td>Check current label</td></tr>
-          <tr><td>Mixing style</td><td>Powder designed to dissolve into drinks</td><td>Powder options designed for mixing</td><td>Powder and other formats are sold</td></tr>
-          <tr><td>Best comparison point</td><td>Combination formula and simple daily mixing</td><td>Straightforward fiber routine</td><td>Psyllium format and product variety</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="wellness-feature" style="margin-top:26px">
-      <article class="wellness-copy">
-        <span class="personal-pick">What I personally use</span>
-        <h2>SunFiber GI</h2>
-        <p>I currently use SunFiber GI myself. I like that it dissolves easily and combines prebiotic fiber with probiotics in one routine.</p>
-        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#wellness">Back to Wellness</a></div>
-        <span class="paid-link">(paid link)</span>
-        <p class="tiny-note">As an Amazon Associate I earn from qualifying purchases. Personal experience can vary. Product details can change, so review the current label and retailer listing before purchase.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="section research-section" id="categories">
   <div class="section-inner">
@@ -315,6 +418,54 @@
     </div>
   </div>
 </section>
+
+
+<section class="section research-section" id="aged-garlic-blog">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div>
+        <div class="section-label"><span>Healing Thyself</span></div>
+        <h2>Aged Garlic &amp; Blood Pressure: Godwin's Personal Experience</h2>
+      </div>
+      <p>A personal wellness story, plus practical reminders about supplements and blood pressure.</p>
+    </div>
+
+    <article class="blog-feature">
+      <span class="personal-pick">Godwin's experience</span>
+      <h3>Why aged garlic stayed in his routine</h3>
+      <p>Godwin started using aged garlic as part of his daily wellness routine during a period when he was dealing with high blood pressure. Over time, his blood pressure readings improved significantly.</p>
+
+      <div class="experience-box">
+        <strong>Important:</strong>
+        <p style="margin-top:8px">We cannot say aged garlic alone caused that improvement or that it cured high blood pressure. What we can say is that aged garlic became an important part of the routine Godwin continued while his readings improved.</p>
+      </div>
+
+      <h4>What aged garlic is</h4>
+      <p>Aged garlic supplements are made from garlic that has been processed and aged over time. People often choose them because they are easier to use consistently than raw garlic and are commonly included in heart-health wellness routines.</p>
+
+      <h4>Godwin's approach</h4>
+      <p>For Godwin, the supplement was not about trying to fix everything overnight. It became one part of a broader routine that included paying attention to daily habits and staying consistent.</p>
+
+      <h4>What to keep in mind</h4>
+      <ul>
+        <li>Personal results can vary.</li>
+        <li>Blood pressure can change for many reasons, including medication, diet, activity, stress, sleep, and other health factors.</li>
+        <li>Supplements can interact with medicines, so it is important to review them with a healthcare professional or pharmacist.</li>
+        <li>Do not stop prescribed blood-pressure medicine based on a supplement or someone else's experience.</li>
+      </ul>
+
+      <div class="wellness-actions">
+        <a class="btn" href="https://link.amazon/B07YB6KEI" target="_blank" rel="noopener noreferrer nofollow sponsored">See the Aged Garlic Godwin Uses</a>
+        <a class="btn btn-secondary" href="#supplements">See All Supplements</a>
+      </div>
+      <span class="paid-link">(paid link)</span>
+      <p class="tiny-note">As an Amazon Associate I earn from qualifying purchases. This article shares personal experience and general wellness information, not medical advice.</p>
+    </article>
+  </div>
+</section>
+
+
+
 
   <section class="section" id="guides"><div class="section-inner"><div class="section-heading"><div><div class="section-label"><span>Buying guides</span></div><h2>Helpful reads for real routines</h2></div><a class="text-link" href="#healing-thyself">Read Healing Thyself &rarr;</a></div><div class="grid-3 guide-grid"><a class="card card-link" href="night-walking-safety.html"><div class="card-body"><span class="card-kicker">Outdoor safety</span><h3>Night walking safety</h3><p>Practical visibility and route-planning ideas for evening walkers.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="runner-safety-gear.html"><div class="card-body"><span class="card-kicker">Running</span><h3>Safety gear for early runs</h3><p>A simple checklist for runners heading out before sunrise.</p><span class="text-link">Read article &rarr;</span></div></a><a class="card card-link" href="dog-walking-safety.html"><div class="card-body"><span class="card-kicker">Pets</span><h3>Dog walking after dark</h3><p>Ways to make people, pets, leashes, and paths easier to see.</p><span class="text-link">Read article &rarr;</span></div></a></div></div></section>
   <section class="section dark" id="deals"><div class="section-inner deal-band"><div><div class="section-label"><span>Deals &amp; live offers</span></div><h2>Check the current details at the source</h2><p>Prices, coupons, ratings, shipping, and availability change. Our shopping links take you to the live retailer page so you can review the current information before buying.</p></div><div><a class="btn" href="https://amzn.to/499lx2I" target="_blank" rel="noopener noreferrer nofollow sponsored">Check featured safety light</a><span class="paid-link">(paid link)</span></div></div></section>

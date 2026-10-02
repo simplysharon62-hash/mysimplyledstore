@@ -178,10 +178,218 @@
 @media(max-width:720px){.spokesperson-card{grid-template-columns:1fr}.spokesperson-avatar{min-height:160px}}
 </style>
 
+
+<style id="layout-fix-20261002">
+/* Restore the compact navigation */
+nav .nav-inner{
+  max-width:1440px;
+  margin:0 auto;
+  padding:0 22px;
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+nav .nav-logo{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  white-space:nowrap;
+}
+nav .nav-logo img{
+  width:64px;
+  height:64px;
+  object-fit:contain;
+}
+nav .nav-logo span{
+  white-space:nowrap;
+}
+nav .nav-links{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  gap:8px;
+  min-width:0;
+}
+nav .nav-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  white-space:nowrap;
+  min-height:42px;
+  padding:0 12px;
+  line-height:1;
+  font-size:14px;
+}
+nav .nav-link.active{
+  padding-left:16px;
+  padding-right:16px;
+}
+
+/* Fiber-first hero */
+.fiber-home-hero{
+  max-width:1440px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(420px,.92fr) minmax(520px,1.08fr);
+  min-height:720px;
+  background:#08080f;
+  border-left:1px solid rgba(255,255,255,.07);
+  border-right:1px solid rgba(255,255,255,.07);
+}
+.fiber-hero-image{
+  background:#030306;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  padding:24px;
+}
+.fiber-hero-image img{
+  width:100%;
+  height:100%;
+  max-height:680px;
+  object-fit:contain;
+  display:block;
+}
+.fiber-hero-copy{
+  background:#151522;
+  padding:44px 42px 34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-width:0;
+}
+.fiber-kicker{
+  color:#f5c518;
+  font-family:'Oswald',sans-serif;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:10px;
+}
+.fiber-hero-copy h1{
+  color:#fff;
+  font-family:'Oswald',sans-serif;
+  font-size:clamp(42px,4vw,66px);
+  line-height:.98;
+  margin:0 0 22px;
+}
+.fiber-hero-copy h2{
+  color:#fff;
+  font-size:36px;
+  margin:14px 0 8px;
+}
+.fiber-hero-copy p{
+  color:#f0eef3;
+  font-size:18px;
+  line-height:1.7;
+  margin:0 0 20px;
+  max-width:760px;
+}
+.fiber-hero-copy .fiber-lead{
+  font-size:20px;
+}
+.fiber-hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:8px;
+}
+.fiber-hero-actions .btn{
+  min-height:54px;
+  padding:0 28px;
+}
+.fiber-hero-actions .fiber-primary{
+  min-width:312px;
+}
+
+/* Keep added wellness content but avoid a second oversized duplicate immediately below */
+#wellness{
+  scroll-margin-top:96px;
+}
+
+@media(max-width:1180px){
+  nav .nav-links{gap:3px}
+  nav .nav-link{font-size:12px;padding:0 8px}
+  nav .nav-logo span{font-size:17px}
+}
+@media(max-width:980px){
+  nav .nav-links{display:none}
+  nav .hamburger{display:flex}
+  .fiber-home-hero{grid-template-columns:1fr}
+  .fiber-hero-image{min-height:420px}
+  .fiber-hero-copy{padding:36px 24px}
+}
+@media(max-width:600px){
+  nav .nav-inner{min-height:74px;padding:0 14px}
+  nav .nav-logo img{width:52px;height:52px}
+  .fiber-home-hero{min-height:0}
+  .fiber-hero-image{min-height:300px;padding:14px}
+  .fiber-hero-copy h1{font-size:42px}
+  .fiber-hero-copy h2{font-size:30px}
+  .fiber-hero-copy p,.fiber-hero-copy .fiber-lead{font-size:16px}
+  .fiber-hero-actions .btn,
+  .fiber-hero-actions .fiber-primary{width:100%;min-width:0}
+}
+</style>
+
 </head>
 <body>
-  <nav><div class="nav-inner"><a class="nav-logo" href="index.html"><img src="sls-logo.png" alt="Simply LED Store logo"><span>Simply LED Store</span></a><div class="nav-links" id="navLinks"><a class="nav-link active" href="index.html">Home</a><a class="nav-link" href="#supplements">Supplements</a><a class="nav-link" href="#meet-godwin">Meet Godwin</a><a class="nav-link" href="#comparisons">Comparisons</a><a class="nav-link" href="#categories">Categories</a><a class="nav-link" href="#guides">Buying Guides</a><a class="nav-link" href="#wellness">Wellness</a><a class="nav-link" href="#deals">Deals</a><a class="nav-link" href="#healing-thyself">Healing Thyself</a><a class="nav-link" href="about.html">About</a></div><button class="hamburger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button></div></nav>
-  <header class="comparison-hero"><div class="hero-copy"><div class="hero-badge"><div class="badge-dot"></div><span>Lifestyle. Essentials. Deals.</span></div><h1>Compare smarter.<br><span class="accent">Shop better.</span></h1><p>Simply LED Store is a practical product-comparison resource for everyday essentials, useful upgrades, and the decisions behind a better buy.</p><div class="button-row"><a class="btn" href="#comparisons">Explore comparisons</a><a class="btn btn-secondary" href="#guides">Read buying guides</a></div><p class="hero-note"><strong>LED</strong> now means Lifestyle. Essentials. Deals. LED safety remains one of our categories, alongside home, kitchen, outdoor, pet, and everyday products.</p></div><div class="hero-panel"><img src="produce-washer-hero.png" alt="Fresh produce beside a rechargeable kitchen gadget"><div class="hero-panel-caption"><span>Featured category</span><strong>Practical kitchen essentials</strong><a href="produce-washer.html">View the guide</a></div></div></header>
+  <nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="sls-logo.png" alt="Simply LED Store logo">
+      <span>Simply LED Store</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="#wellness">Fiber &amp; Wellness</a>
+      <a class="nav-link" href="#comparisons">Comparisons</a>
+      <a class="nav-link" href="#categories">Categories</a>
+      <a class="nav-link" href="#guides">Buying Guides</a>
+      <a class="nav-link" href="#deals">Deals</a>
+      <a class="nav-link" href="#healing-thyself">Blog</a>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+    <button class="hamburger" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+  <header class="fiber-home-hero" id="fiber-top">
+  <div class="fiber-hero-image">
+    <img src="sunfiber-hero.png" alt="SunFiber GI prebiotic fiber and probiotic blend">
+  </div>
+  <div class="fiber-hero-copy">
+    <span class="fiber-kicker">Fiber &amp; Wellness</span>
+    <h1>Why fiber matters — and<br>the fiber I personally use</h1>
+    <p class="fiber-lead">Fiber is a plant-based carbohydrate your body does not fully digest. It supports digestion and regularity, and certain types of fiber can help support healthy cholesterol and blood-sugar levels.</p>
+
+    <span class="personal-pick">What I personally use</span>
+    <h2>SunFiber GI</h2>
+    <p>I currently use SunFiber GI as part of my own routine. The label on the product shown here lists 5 g plant fiber, 8 billion probiotics, 30 servings, and Low FODMAP certification.</p>
+
+    <div class="wellness-badges">
+      <span>5 g plant fiber</span>
+      <span>8 billion probiotics</span>
+      <span>30 servings</span>
+      <span>Low FODMAP certified</span>
+    </div>
+
+    <div class="fiber-hero-actions">
+      <a class="btn fiber-primary" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a>
+      <a class="btn btn-secondary" href="#wellness">What Fiber Does</a>
+      <a class="btn btn-secondary" href="#healing-thyself">Read Healing Thyself</a>
+      <a class="btn btn-secondary" href="#fiber-comparison">Compare Fiber Supplements</a>
+    </div>
+    <span class="paid-link">(paid link)</span>
+  </div>
+</header>
 
 <section class="section research-section" id="wellness">
   <div class="section-inner">
@@ -210,36 +418,6 @@
   </div>
 </section>
 
-<section class="section research-section" id="fiber-comparison">
-  <div class="section-inner">
-    <div class="section-heading">
-      <div><div class="section-label"><span>Fiber comparison</span></div><h2>SunFiber GI vs Benefiber vs Metamucil</h2></div>
-      <p>Compare label-level differences and everyday convenience before choosing a fiber supplement.</p>
-    </div>
-    <div class="fiber-note"><strong>How to read this comparison</strong><p>This comparison focuses on product labels and everyday use. It does not rank medical outcomes or replace advice from a clinician or pharmacist.</p></div>
-    <div class="fiber-compare-wrap">
-      <table class="fiber-compare-table">
-        <thead><tr><th>Feature</th><th>SunFiber GI</th><th>Benefiber</th><th>Metamucil</th></tr></thead>
-        <tbody>
-          <tr><td>Primary positioning</td><td>Prebiotic fiber + probiotic blend</td><td>Daily soluble fiber supplement</td><td>Psyllium-based fiber supplement</td></tr>
-          <tr><td>Added probiotics</td><td>Yes — the product shown on this site lists 8 billion CFU</td><td>Check current label</td><td>Check current label</td></tr>
-          <tr><td>Mixing style</td><td>Powder designed to dissolve into drinks</td><td>Powder options designed for mixing</td><td>Powder and other formats are sold</td></tr>
-          <tr><td>Best comparison point</td><td>Combination formula and simple daily mixing</td><td>Straightforward fiber routine</td><td>Psyllium format and product variety</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="wellness-feature" style="margin-top:26px">
-      <article class="wellness-copy">
-        <span class="personal-pick">What I personally use</span>
-        <h2>SunFiber GI</h2>
-        <p>I currently use SunFiber GI myself. I like that it dissolves easily and combines prebiotic fiber with probiotics in one routine.</p>
-        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#wellness">Back to Wellness</a></div>
-        <span class="paid-link">(paid link)</span>
-        <p class="tiny-note">As an Amazon Associate I earn from qualifying purchases. Personal experience can vary. Product details can change, so review the current label and retailer listing before purchase.</p>
-      </article>
-    </div>
-  </div>
-</section>
 
 <section class="section research-section" id="supplements">
   <div class="section-inner">
@@ -281,6 +459,7 @@
   </div>
 </section>
 
+
 <section class="section research-section" id="meet-godwin">
   <div class="section-inner">
     <div class="section-heading">
@@ -311,15 +490,36 @@
 
 
 
-
-
-
-
-
-
-
-
-
+<section class="section research-section" id="fiber-comparison">
+  <div class="section-inner">
+    <div class="section-heading">
+      <div><div class="section-label"><span>Fiber comparison</span></div><h2>SunFiber GI vs Benefiber vs Metamucil</h2></div>
+      <p>Compare label-level differences and everyday convenience before choosing a fiber supplement.</p>
+    </div>
+    <div class="fiber-note"><strong>How to read this comparison</strong><p>This comparison focuses on product labels and everyday use. It does not rank medical outcomes or replace advice from a clinician or pharmacist.</p></div>
+    <div class="fiber-compare-wrap">
+      <table class="fiber-compare-table">
+        <thead><tr><th>Feature</th><th>SunFiber GI</th><th>Benefiber</th><th>Metamucil</th></tr></thead>
+        <tbody>
+          <tr><td>Primary positioning</td><td>Prebiotic fiber + probiotic blend</td><td>Daily soluble fiber supplement</td><td>Psyllium-based fiber supplement</td></tr>
+          <tr><td>Added probiotics</td><td>Yes — the product shown on this site lists 8 billion CFU</td><td>Check current label</td><td>Check current label</td></tr>
+          <tr><td>Mixing style</td><td>Powder designed to dissolve into drinks</td><td>Powder options designed for mixing</td><td>Powder and other formats are sold</td></tr>
+          <tr><td>Best comparison point</td><td>Combination formula and simple daily mixing</td><td>Straightforward fiber routine</td><td>Psyllium format and product variety</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="wellness-feature" style="margin-top:26px">
+      <article class="wellness-copy">
+        <span class="personal-pick">What I personally use</span>
+        <h2>SunFiber GI</h2>
+        <p>I currently use SunFiber GI myself. I like that it dissolves easily and combines prebiotic fiber with probiotics in one routine.</p>
+        <div class="wellness-actions"><a class="btn" href="https://link.amazon/B0bC6p6fV" target="_blank" rel="noopener noreferrer nofollow sponsored">See SunFiber GI on Amazon</a><a class="btn btn-secondary" href="#wellness">Back to Wellness</a></div>
+        <span class="paid-link">(paid link)</span>
+        <p class="tiny-note">As an Amazon Associate I earn from qualifying purchases. Personal experience can vary. Product details can change, so review the current label and retailer listing before purchase.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
 
   <section class="section intro-band"><div class="section-inner intro-grid"><div><div class="section-label"><span>How we help</span></div><h2>Useful information before you click buy</h2></div><p>We organize product research into clear comparisons, practical guides, and current shopping links. Product details, prices, availability, and reviews can change, so confirm the live listing before ordering.</p></div></section>

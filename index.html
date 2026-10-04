@@ -338,6 +338,58 @@ nav .nav-link.active{
 }
 </style>
 
+
+<style id="godwin-media-style">
+.spokesperson-media{
+  display:grid;
+  grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);
+  gap:24px;
+  align-items:start;
+}
+.spokesperson-photo{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  background:#0b0b12;
+  border:1px solid var(--border);
+}
+.spokesperson-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.spokesperson-video-wrap{
+  margin-top:18px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  background:#0b0b12;
+}
+.spokesperson-video-wrap video{
+  display:block;
+  width:100%;
+  max-height:560px;
+  background:#000;
+}
+.spokesperson-video-caption{
+  padding:14px 16px 18px;
+}
+.spokesperson-video-caption strong{
+  display:block;
+  color:#fff;
+  font-size:18px;
+  margin-bottom:5px;
+}
+.spokesperson-video-caption span{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+@media(max-width:820px){
+  .spokesperson-media{grid-template-columns:1fr}
+}
+</style>
+
 </head>
 <body>
   <nav>
@@ -460,6 +512,7 @@ nav .nav-link.active{
 </section>
 
 
+
 <section class="section research-section" id="meet-godwin">
   <div class="section-inner">
     <div class="section-heading">
@@ -469,20 +522,36 @@ nav .nav-link.active{
       </div>
       <p>A familiar face for the wellness products and routines featured on Simply LED Store.</p>
     </div>
-    <div class="spokesperson-card">
-      <div class="spokesperson-avatar" role="img" aria-label="Godwin wellness spokesperson placeholder">
-        <strong>Godwin<br>Wellness Spokesperson</strong>
+
+    <div class="spokesperson-card spokesperson-media">
+      <div>
+        <div class="spokesperson-photo">
+          <img src="godwin-wellness-spokesperson.png" alt="Godwin, Simply LED Store wellness spokesperson">
+        </div>
       </div>
+
       <div class="spokesperson-copy">
         <span class="personal-pick">Real routine. Real experience.</span>
         <h3>Godwin shares what he actually uses</h3>
         <p>Godwin is the wellness spokesperson for our Healing Thyself section. He shares supplements and wellness products that are part of his own routine, along with his personal experience using them.</p>
         <p>His experience is personal and is not medical advice. We encourage readers to review current product labels and speak with a qualified healthcare professional or pharmacist when appropriate.</p>
         <a class="card-cta" href="#supplements">See Godwin's Supplements</a>
+
+        <div class="spokesperson-video-wrap">
+          <video controls preload="metadata" poster="godwin-wellness-spokesperson.png">
+            <source src="godwin-sunfiber-wellness.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="spokesperson-video-caption">
+            <strong>Watch Godwin's Wellness Story</strong>
+            <span>Godwin talks about digestive wellness, fiber, and the SunFiber GI product featured on the site.</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 

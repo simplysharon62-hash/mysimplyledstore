@@ -351,3 +351,5 @@ footer { background:#050508; padding:32px 24px; }
 /* legal pages + footer links */
 .footer-legal{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 10px;font-size:14px;color:var(--muted)}.footer-legal a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}.footer-legal a:hover{color:var(--gold)}
 .legal h2{font-size:24px;margin:32px 0 10px;color:var(--gold)}.legal p,.legal li{color:var(--text);margin-bottom:12px}.legal ul{padding-left:22px;margin-bottom:16px}.legal a:not(.btn){color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+
+.article .byline{color:var(--muted);font-size:14px;margin-bottom:18px}.article-img{width:100%;max-height:440px;object-fit:cover;border-radius:12px;margin:8px 0 24px}.article h3.faq-q{font-size:19px;margin:20px 0 6px}.table-wrap{overflow-x:auto;margin:10px 0 20px}.table-wrap table{width:100%;min-width:560px;border-collapse:collapse;font-size:15px}.table-wrap th,.table-wrap td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top}.table-wrap th{color:var(--gold)}.note-box{text-align:left}.tiny-note{font-size:13px;color:var(--muted);margin-top:24px}

@@ -347,3 +347,7 @@ footer { background:#050508; padding:32px 24px; }
   .btn { width:100%; max-width:320px; }
   .button-row { align-items:stretch; }
 }
+
+/* legal pages + footer links */
+.footer-legal{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 10px;font-size:14px;color:var(--muted)}.footer-legal a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}.footer-legal a:hover{color:var(--gold)}
+.legal h2{font-size:24px;margin:32px 0 10px;color:var(--gold)}.legal p,.legal li{color:var(--text);margin-bottom:12px}.legal ul{padding-left:22px;margin-bottom:16px}.legal a:not(.btn){color:var(--gold);text-decoration:underline;text-underline-offset:3px}

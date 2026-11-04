@@ -395,6 +395,9 @@ nav .nav-link.active{
 </style>
 
 <style id="nitric-duo-style">
+.fiber-hero-copy .hero-title{color:#fff;font-family:'Oswald',sans-serif;font-size:clamp(42px,4vw,66px);line-height:.98;margin:0 0 22px}
+.nitric-home-hero{border-bottom:1px solid rgba(255,255,255,.07)}
+#fiber-top{scroll-margin-top:96px;margin-top:0}
 .fiber-hero-image.duo{gap:18px;padding:28px 22px}
 .fiber-hero-image.duo figure{flex:1 1 0;margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:0}
 .fiber-hero-image.duo figure img{max-height:560px;height:auto}
@@ -431,24 +434,44 @@ nav .nav-link.active{
     </button>
   </div>
 </nav>
-  <header class="fiber-home-hero" id="fiber-top">
-  <div class="fiber-hero-image duo">
-    <figure><img src="carlyle-nitric-oxide-hero_1.png" alt="Carlyle Nitric Oxide Max 3000 mg bottle, 120 capsules"><figcaption>Carlyle Nitric Oxide Max</figcaption></figure>
-    <figure><img src="sunfiber-hero.png" alt="SunFiber GI prebiotic fiber and probiotic blend"><figcaption>SunFiber GI</figcaption></figure>
+  <header class="fiber-home-hero nitric-home-hero" id="nitric-top">
+  <div class="fiber-hero-image">
+    <img src="carlyle-nitric-oxide-hero_1.png" alt="Carlyle Nitric Oxide Max 3000 mg bottle, 120 capsules">
+  </div>
+  <div class="fiber-hero-copy">
+    <span class="fiber-kicker">Godwin's Routine</span>
+    <h1 class="hero-title">The nitric oxide supplement<br>Godwin uses every day</h1>
+    <p class="fiber-lead">Nitric oxide is a molecule your body makes on its own. L-citrulline and L-arginine are amino acids your body uses to make it, and they are the two ingredients in the supplement Godwin takes.</p>
+
+    <span class="personal-pick">In Godwin's routine</span>
+    <h2>Carlyle Nitric Oxide Max 3000 mg</h2>
+    <p>The label lists 2,000 mg L-citrulline and 1,000 mg L-arginine per serving, in 120 quick-release capsules.</p>
+
+    <div class="wellness-badges">
+      <span>3,000 mg per serving</span>
+      <span>L-citrulline 2,000 mg</span>
+      <span>L-arginine 1,000 mg</span>
+      <span>120 capsules</span>
+    </div>
+    <p class="tiny-note">Personal experience can vary. This site shares product information and shopping links, not medical advice. Talk with a pharmacist or doctor before adding supplements, especially if you take medications.</p>
+
+    <div class="fiber-hero-actions">
+      <a class="btn fiber-primary" href="https://link.amazon/B0gqz75DS" target="_blank" rel="noopener noreferrer nofollow sponsored">See Nitric Oxide Max on Amazon</a>
+      <a class="btn btn-secondary" href="#meet-godwin">Watch Godwin's Video</a>
+      <a class="btn btn-secondary" href="#fiber-top">See the Fiber He Uses</a>
+      <a class="btn btn-secondary" href="#supplements">All of Godwin's Supplements</a>
+    </div>
+  </div>
+</header>
+
+<section class="fiber-home-hero" id="fiber-top">
+  <div class="fiber-hero-image">
+    <img src="sunfiber-hero.png" alt="SunFiber GI prebiotic fiber and probiotic blend" loading="lazy">
   </div>
   <div class="fiber-hero-copy">
     <span class="fiber-kicker">Fiber &amp; Wellness</span>
-    <h1>Why fiber matters — and<br>the fiber I personally use</h1>
+    <h2 class="hero-title">Why fiber matters — and<br>the fiber I personally use</h2>
     <p class="fiber-lead">Fiber is a plant-based carbohydrate your body does not fully digest. It supports digestion and regularity, and certain types of fiber can help support healthy cholesterol and blood-sugar levels.</p>
-
-    <div class="routine-duo">
-      <div class="product-thumb"><img src="carlyle-nitric-oxide-hero_1.png" alt="Carlyle Nitric Oxide Max 3000 mg"></div>
-      <div>
-        <strong>In Godwin's routine: Carlyle Nitric Oxide Max</strong>
-        <span>L-citrulline (2,000 mg) and L-arginine (1,000 mg) per serving, 120 quick-release capsules.</span>
-        <a class="card-cta" href="https://link.amazon/B0gqz75DS" target="_blank" rel="noopener noreferrer nofollow sponsored">See Nitric Oxide Max on Amazon</a>
-      </div>
-    </div>
 
     <span class="personal-pick">What I personally use</span>
     <h2>SunFiber GI</h2>
@@ -468,7 +491,7 @@ nav .nav-link.active{
       <a class="btn btn-secondary" href="#fiber-comparison">Compare Fiber Supplements</a>
     </div>
   </div>
-</header>
+</section>
 
 <section class="section research-section" id="wellness">
   <div class="section-inner">

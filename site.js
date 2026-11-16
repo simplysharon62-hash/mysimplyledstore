@@ -20,8 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.querySelectorAll('a').forEach((link) => {
+    if (/amazon/i.test(link.textContent.trim()) && /amazon\.com|amzn\.to|link\.amazon/i.test(link.href)) {
+      link.classList.add('amazon-cta');
+    }
+  });
+
   document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href*="amzn.to"], a[href*="amazon.com"]');
+    const link = event.target.closest('a[href*="amzn.to"], a[href*="amazon.com"], a[href*="link.amazon"]');
     if (!link || typeof gtag !== 'function') return;
     gtag('event', 'amazon_click', {
       event_category: 'affiliate',
